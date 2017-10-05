@@ -1,18 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<?php
 
-	<title></title>
+$title = "CCBDC Framework";
+include("includes/head.php");
+?>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<?php include("includes/header.php"); ?>
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-	<link rel="stylesheet" type="text/css" href="css/core.min.css"/>
-</head>
-<body>
-
-</body>
-</html>
+<?php include("includes/footer.php") ; ?>
+<?php include("includes/foot.php") ; ?>

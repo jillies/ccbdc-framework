@@ -1,7 +1,3 @@
-(function () {
-    'use strict';
-}());
-
 module.exports = function (grunt) {
     grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -14,22 +10,21 @@ module.exports = function (grunt) {
         }
     },
     watch: {
-          css: {
-            files: ['scss/*.scss'],
-            tasks: ['compass']
-          }
-      },
+        css: {
+          files: ['scss/*.scss'],
+          tasks: ['compass']
+        },
+    },
     browserSync: {
         bsFiles: {
             src : ['css/*.css', '*.php']
         },
         options: {
             watchTask: true,
-            server: {
-                baseDir: "./"
-            }
+            proxy: "localhost/ccbdc-framework/"
         }
     }
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-compass');
