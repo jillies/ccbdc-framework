@@ -1,0 +1,27 @@
+// Font Weights
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$font-weight-medium: 400;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-thin: 300;
+
+// Typography
+$font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+$font-smoothing: antialiased;
+$body-font-weight: $font-weight-regular;
+
+// Responsiveness Settings
+$min-device-width: 320px; 				// iPhone Portrait
+$iphone6plus-width: 414px; 				// iPhone Portrait
+$andriod-device-width: 480px; 			// Base Android Phone
+$landscape-device-width: 533px; 		// iPhone5 Landscape
+$tablet-device-width: 768px;			// iPad Portrait
+$small-tablet-width: 600px;				// Small Android Tablets
+$document-width: 960px;					// Default Document
+$large-document-width: 1500px;			// Default Document
+$max-device-width: 2000px;				// Max Document Size
+
+
+// Colours
+$white: rgb(255,255,255);
