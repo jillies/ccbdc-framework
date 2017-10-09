@@ -14,6 +14,16 @@
        url('../fonts/#{$font-family}.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: '#{$bold-family}';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/#{$bold-family}.eot);
+  src: url('../fonts/#{$bold-family}.eot?#iefix') format('ie9-skip-eot'),
+       url('../fonts/#{$bold-family}.woff') format('woff'),
+       url('../fonts/#{$bold-family}.ttf') format('truetype');
+}
+
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return $remSize * 1rem;

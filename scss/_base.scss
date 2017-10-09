@@ -1,0 +1,152 @@
+/* Base Styles */
+
+* { @include box-sizing(border-box); }
+
+body {
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  position: relative;
+  -webkit-font-smoothing: $font-smoothing;
+  -moz-osx-font-smoothing: grayscale;
+  @include respond(all-phones) {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  /*color:$medium-green;*/
+}
+
+h1, h2, h3 {
+  line-height:1.25em;
+}
+
+h4, h5, h6 {
+  line-height:1.375em;
+  @include respond(tablets) {
+    line-height:1.25em;
+  }
+}
+
+em {
+  font-style:italic;
+}
+
+h1 {
+  @include font-size(40px);
+  @include respond(tablets) {
+    @include font-size(46px);
+  }
+}
+
+h2 {
+  @include font-size(32px);
+  @include respond(tablets) {
+    @include font-size(40px);
+  }
+}
+
+h3 {
+  @include font-size(28px);
+  @include respond(tablets) {
+    @include font-size(32px);
+  }
+}
+
+h4 {
+  @include font-size(24px);
+  @include respond(tablets) {
+    @include font-size(26px);
+  }
+}
+
+h5 {
+  @include font-size(20px);
+  @include respond(tablets) {
+    @include font-size(24px);
+  }
+}
+
+h6 {
+  @include font-size(18px);
+  @include respond(tablets) {
+    @include font-size(20px);
+  }
+}
+
+p {
+  @include font-size(16px);
+  line-height:1.6em;
+  margin-bottom:1.875em;
+  clear:both;
+  strong {
+    font-weight:600;
+  }
+}
+
+small {
+  @include font-size(14px);
+  line-height:1.375em;
+  @include inline-block;
+}
+
+.font-smaller {
+  @include font-size(12px);
+  line-height:1.375em;
+  @include inline-block;
+}
+
+
+a {
+  cursor:pointer;
+  @include transition(all, 0.2s ease-in-out);
+  text-decoration:none;
+  &:hover {
+  }
+}
+
+label {
+  @include font-size(14px);
+  @include inline-block;
+  width:100%;
+}
+
+input {
+  -webkit-appearance: none;
+  width:100%;
+  padding:10px;
+  margin:0.5em 0 0.25em;
+  /*border:1px solid $border-grey;*/
+  @include font-size(16px);
+  @include border-radius(4px);
+  @include transition(all, 0.2s ease-in-out);
+  &:invalid {
+    box-shadow:none;
+  }
+}
+
+input[type="submit"] {
+  border:none;
+  @include font-size(16px);
+  color:$white;
+  font-weight:700;
+  height:50px;
+  @include transition(all, 0.2s ease-in-out);
+  &:hover {
+  }
+  &:disabled, &:disabled:hover {
+  }
+}
+
+.center {
+  text-align:center;
+}
+
