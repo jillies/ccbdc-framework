@@ -1,0 +1,194 @@
+.header--top {
+	padding:0 10px;
+	@include display-flex;
+	@include flex-direction(row);
+}
+
+.header--logo {
+	a {
+		padding:10px 0;
+		@include inline-block;
+	}
+}
+
+.header--actions {
+	margin-left:auto;
+	@include font-size(12px);
+	@include display-flex;
+	> ul {
+		position:relative;
+		align-items:center;
+		@include display-flex;
+		@include flex-direction(row);
+		@include respond(tablets) {
+			position:relative;
+		}
+		> li {
+			margin-left:10px;
+			> a {
+				padding:10px 5px;
+				@include inline-block;
+			}
+		}
+	}
+	a, i {
+		@include inline-block;
+		vertical-align: middle;
+	}
+}
+
+.header--actions-topup {
+	display:none;
+	a {
+		@include border-radius(5px);
+	}
+}
+	.header--actions {
+		.header--actions-topup {
+			a {
+				padding:8px 10px;
+			}
+		}
+	}
+
+.header--actions-dropdown {
+	/*display:none;*/
+	position:absolute;
+	right:0;
+	top:45px;
+	width:180px;
+	background:$alabaster;
+	@include border-radius(2px);
+	@include box-shadow($black-a25 0 0 5px);
+	padding:15px 0 0;
+	@include respond(desktops) {
+/*		right:auto;
+		left:-50%;
+*/	}
+	a, small, p {
+		color:$black;
+	}
+	a {
+		padding:0 20px;
+		width:100%;
+		vertical-align:top;
+		&:hover {
+			background:$mercury;
+		}
+	}
+	p {
+		margin-bottom:5px;
+	}
+	li {
+		padding:0;
+		line-height:45px;
+		@include font-size(14px);
+	}
+}
+
+li.header--actions-user {
+	@include respond(tablets) {
+		position:relative;
+	}
+}
+
+li.header--actions-details {
+	padding-bottom: 10px;
+	line-height:1em;
+	border-bottom:1px solid $mercury;
+	padding:0 20px 20px 20px;
+	a {
+		small {
+			padding:0;
+		}
+		&:hover {
+			background:none;
+		}
+	}
+}
+
+li a.header--actions-manage {
+	@include font-size(12px);
+	color:$white;
+	padding:10px;
+	@include border-radius(5px);
+	@include inline-block;
+	background:$dove-grey;
+	@include respond(desktops) {
+		@include border-radius(0);
+		color:$lochmara;
+		display:inline;
+		background:none;
+		padding:0;
+	}
+	&:hover {
+		background:$emperor;
+		@include respond(desktops) {
+			background:none;
+			text-decoration:underline;
+		}
+	}
+}
+
+.header--actions-line {
+	border-top:1px solid $mercury;
+}
+
+
+
+// Maxis only
+.brand--maxis {
+	.header--top {
+		border-bottom:1px solid $mercury;
+	}
+	.header--actions {
+		> ul > li {
+			> a, > i {
+				color:$dove-grey;
+			}
+			> a:hover {
+				color:$apple;
+				i {
+					color:$apple;
+				}
+			}
+		}
+	}
+}
+
+// Hotlink only
+.brand--hotlink {
+	.header--top, .menu--top {
+		background:$guardsman-red;
+	}
+	.header--actions {
+		> ul > li {
+			> a, > i {
+				color:$white;
+			}
+			> a:hover {
+				color:$mercury;
+				i {
+					color:$mercury;
+				}
+			}
+		}
+	}
+	.header--actions-topup {
+		a {
+			background:$maroon-a;
+			&:hover {
+				background:$tempress-a;
+			}
+		}
+	}
+	@include respond(tablets) {
+		.header--actions-topup {
+			display:block;
+		}
+	}
+	.header--bottom {
+		@include box-shadow($dove-grey-a 0 0 5px);
+	}
+
+}

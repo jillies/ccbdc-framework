@@ -98,10 +98,14 @@ small {
   @include inline-block;
 }
 
-.font-smaller {
+.font--smaller {
   @include font-size(12px);
   line-height:1.375em;
   @include inline-block;
+}
+
+.font--blue {
+  color:$lochmara;
 }
 
 

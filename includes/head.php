@@ -13,4 +13,4 @@
 	<link rel="stylesheet" type="text/css" href="css/core.min.css"/>
 </head>
 <body>
-	<div class="brand--name">
+	
