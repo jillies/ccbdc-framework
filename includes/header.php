@@ -3,27 +3,26 @@
 	<header>
 		<div class="header--top">
 			<div class="header--logo">
-				<a href="index.php"><img src="images/maxis.svg" alt="Maxis" /></a>
+				<a href="index.php">
+					<img src="images/maxis.svg" alt="Maxis" />
+				</a>
 			</div>
 			<div class="header--actions">
 				<ul>
 					<li class="header--actions-user">
-						<a href="#">Ahmad Chee <i class="material-icons">account_circle</i></a>
+						<a href="javascript:void(0);">Ahmad Chee <i class="material-icons">account_circle</i></a>
 						<ul class="header--actions-dropdown">
 							<li class="header--actions-details">
-								<small class="font--smaller">Ahmad Chee</small>
-								<p>6017 225 4853</p>
-								<a href="#" class="header--actions-manage">Manage subcriptions
-								</a>
+								<small class="font--smaller">My number</small>
+								<p>6017 225 4888</p>
+								<a href="#" class="header--actions-manage">Manage subscription</a>
 							</li>
 							<li><a href="#">Dashboard</a></li>
 							<li><a href="#">Entertainment</a></li>
 							<li><a href="#">Orders</a></li>
 							<li><a href="#">Inbox</a></li>
 							<li><a href="#">Profile</a></li>
-							<li class="header--actions-line">
-								<a href="#">Log out</a>
-							</li>
+							<li class="header--actions-line"><a href="#">Log out</a></li>
 						</ul>
 					</li>
 					<li class="header--actions-topup">
@@ -108,13 +107,12 @@
 			<div class="header--actions">
 				<ul>
 					<li class="header--actions-user">
-						<a href="#">Sign in <i class="material-icons">account_circle</i></a>
+						<a href="javascript:void(0);">Sign in <i class="material-icons">account_circle</i></a>
 						<ul class="header--actions-dropdown">
 							<li class="header--actions-details">
-								<small class="font--smaller">Ahmad Chee</small>
-								<p>6017 225 4853</p>
-								<a href="#" class="header--actions-manage">Manage subcriptions
-								</a>
+								<small class="font--smaller">Ahmad Chee CheeChee Chee</small>
+								<p>6017 225 48</p>
+								<a href="#" class="header--actions-manage">Manage subcriptions</a>
 							</li>
 							<li><a href="#">Dashboard</a></li>
 							<li><a href="#">Entertainment</a></li>
