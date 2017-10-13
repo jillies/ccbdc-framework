@@ -33,23 +33,23 @@
 			</div>
 		</div>
 		<div class="header--bottom">
-			<nav class="menu--top">
+			<nav class="header--menu-top">
 				<ul>
-					<li><a href="#">Explore</a></li>
+					<li class="header--menu-dropdown"><a href="#">Explore <i class="material-icons">keyboard_arrow_down</i></a></li>
 					<li><a href="#">Devices</a></li>
 					<li><a href="#">Plans</a></li>
 					<li><a href="#">Experiences</a></li>
-					<li><a href="#">Search</a></li>
+					<li class="header--menu-search"><a href="#"><i class="material-icons">search</i></a></li>
 				</ul>
 			</nav>
-			<nav class="menu--extended">
-				<div class="menu--extended-quicklist">
+			<nav class="header--menu-extended">
+				<div class="header--menu-quicklist">
 					<ul>
 						<li><a href="#">For Business</a></li>
 						<li><a href="#">Bahasa Melayu</a></li>
 					</ul>
 				</div>
-				<div class="menu--extended-list">
+				<div class="header--menu-list">
 					<h6><a href="#">Plans</a></h6>
 					<ul>
 						<li><a href="#">MaxisONE Plan</a></li>
@@ -84,7 +84,7 @@
 						<li><a href="#">Accessories</a></li>
 					</ul>
 				</div>
-				<div class="menu--extended-bottomlist">
+				<div class="header--menu-bottomlist">
 					<ul>
 						<li><a href="#">Deals</a></li>
 						<li><a href="#">Trade-in</a></li>
@@ -110,7 +110,7 @@
 						<a href="javascript:void(0);">Sign in <i class="material-icons">account_circle</i></a>
 						<ul class="header--actions-dropdown">
 							<li class="header--actions-details">
-								<small class="font--smaller">Ahmad Chee CheeChee Chee</small>
+								<small class="font--smaller">My account</small>
 								<p>6017 225 48</p>
 								<a href="#" class="header--actions-manage">Manage subcriptions</a>
 							</li>
@@ -132,23 +132,23 @@
 			</div>
 		</div>
 		<div class="header--bottom">
-			<nav class="menu--top">
+			<nav class="header--menu-top">
 				<ul>
-					<li><a href="#">Explore</a></li>
+					<li class="header--menu-dropdown"><a href="#">Explore <i class="material-icons">keyboard_arrow_down</i></a></li>
 					<li><a href="#">Devices</a></li>
 					<li><a href="#">Plans</a></li>
 					<li><a href="#">Experiences</a></li>
-					<li><a href="#">Search</a></li>
+					<li class="header--menu-search"><a href="#"><i class="material-icons">search</i></a></li>
 				</ul>
 			</nav>
-			<nav class="menu--extended">
-				<div class="menu--extended-quicklist">
+			<nav class="header--menu-extended">
+				<div class="header--menu--quicklist">
 					<ul>
 						<li><a href="#">For Business</a></li>
 						<li><a href="#">Bahasa Melayu</a></li>
 					</ul>
 				</div>
-				<div class="menu--extended-list">
+				<div class="header--menu-list">
 					<h6><a href="#">Plans</a></h6>
 					<ul>
 						<li><a href="#">MaxisONE Plan</a></li>
@@ -183,7 +183,7 @@
 						<li><a href="#">Accessories</a></li>
 					</ul>
 				</div>
-				<div class="menu--extended-bottomlist">
+				<div class="header--menu-bottomlist">
 					<ul>
 						<li><a href="#">Deals</a></li>
 						<li><a href="#">Trade-in</a></li>

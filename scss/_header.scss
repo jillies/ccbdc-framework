@@ -1,3 +1,4 @@
+/* Top Header only */
 .header--top {
 	padding:0 10px;
 	@include display-flex;
@@ -15,8 +16,7 @@
 	@include font-size(12px);
 	@include display-flex;
 	> ul {
-/*		position:relative;
-*/		align-items:center;
+		align-items:center;
 		@include display-flex;
 		@include flex-direction(row);
 		@include respond(tablets) {
@@ -144,6 +144,55 @@ li a.header--actions-manage {
 	border-top:1px solid $mercury;
 }
 
+/* Bottom header */
+
+.header--menu-top {
+	ul {
+		@include display-flex;
+		@include flex-direction(row);
+		justify-content:space-between;
+		margin:0 10px;
+	}
+	li {
+		@include font-size(12px);
+	}
+	a {
+		line-height:40px;
+		padding:5px 0;
+		font-weight:600;
+		i {
+			@include inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+.header--menu-dropdown {
+	a {
+		border:1px solid $dove-grey;
+		padding:5px;
+		@include border-radius(5px);
+		i {
+			@include font-size(12px);
+		}
+	}
+}
+
+.header--menu-search {
+	a {
+		padding-right:5px;
+		i {
+			color:$dove-grey;
+		}
+		&:hover {
+			i {
+				color:$silver;
+			}
+		}
+
+	}
+}
+
 
 
 // Maxis only
@@ -161,6 +210,24 @@ li a.header--actions-manage {
 				i {
 					color:$apple;
 				}
+			}
+		}
+	}
+	.header--menu-top {
+		border-bottom:1px solid $mercury;
+		a {
+			color:$apple;
+			&:hover {
+				color:$dusty-grey;
+			}
+		}
+	}
+	.header--menu-dropdown {
+		a {
+			border-color:$apple;
+			&:hover, &:focus {
+				background:$apple;
+				color:$white;
 			}
 		}
 	}
@@ -200,6 +267,38 @@ li a.header--actions-manage {
 	}
 	.header--bottom {
 		@include box-shadow($dove-grey-a 0 0 5px);
+	}
+
+	.header--menu-top {
+		background:$guardsman-red;
+		a {
+			color:$white;
+			&:hover {
+				color:$mercury;
+			}
+		}
+	}
+	.header--menu-dropdown {
+		a {
+			border-color:$white;
+			&:hover, &:focus {
+				background:$maroon;
+				color:$white;
+				border-color:$maroon;
+			}
+		}
+	}
+	.header--menu-search {
+		a {
+			i {
+				color:$white;
+			}
+			&:hover {
+				i {
+					color:$silver;
+				}
+			}
+		}
 	}
 
 }
