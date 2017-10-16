@@ -98,7 +98,7 @@
 </div>
 
 <!-- Hotlink //-->
-<div class="brand--hotlink">
+<!-- <div class="brand--hotlink">
 	<header>
 		<div class="header--top">
 			<div class="header--logo">
@@ -142,7 +142,7 @@
 				</ul>
 			</nav>
 			<nav class="header--menu-extended">
-				<div class="header--menu--quicklist">
+				<div class="header--menu-quicklist">
 					<ul>
 						<li><a href="#">For Business</a></li>
 						<li><a href="#">Bahasa Melayu</a></li>
@@ -194,4 +194,4 @@
 			</nav>
 		</div>
 	</header>
-</div>
+</div> -->

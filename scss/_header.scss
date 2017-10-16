@@ -203,6 +203,56 @@ li.header--menu-search {
 	}
 }
 
+// Full Dropdown Menu
+
+.header--menu-extended {
+	display:none;
+	background:$alabaster;
+	padding:20px;
+	@include font-size(12px);
+	font-weight:600;
+	a {
+		color:$emperor;
+		&:hover, &:focus {
+			text-decoration:underline;
+		}
+	}
+	li {
+		line-height:1.8em;
+	}
+	h6 {
+		font-family:$body-font-family;
+		font-weight:700;
+		text-transform:uppercase;
+		margin-bottom:5px;
+		letter-spacing:-0.03em;
+		a {
+			&:hover, &:focus {
+				text-decoration:none;
+			}
+		}
+	}
+
+}
+
+.header--menu-quicklist {
+	font-weight:normal;
+	ul {
+		@include display-flex;
+		@include flex-direction(row);
+		margin-bottom:20px;
+	}
+	li {
+		margin-right:20px;
+	}
+}
+
+.header--menu-list {
+	ul {
+		margin-bottom:20px;
+	}
+}
+
 
 
 // Maxis only
@@ -240,6 +290,16 @@ li.header--menu-search {
 				color:$white;
 			}
 		}
+	}
+	.header--menu-extended {
+		h6 {
+			a {
+				color:$apple2;
+			}
+		}
+		a:hover, a:focus {
+			color:$apple2;
+		} 
 	}
 }
 
@@ -309,6 +369,16 @@ li.header--menu-search {
 				}
 			}
 		}
+	}
+	.header--menu-extended {
+		h6 {
+			a {
+				color:$mine-shaft;
+			}
+		}
+		a:hover, a:focus {
+			color:$guardsman-red;
+		} 
 	}
 
 }
