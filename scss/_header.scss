@@ -152,9 +152,15 @@ li a.header--actions-manage {
 		@include flex-direction(row);
 		justify-content:space-between;
 		margin:0 10px;
+		@include respond(tablets) {
+			justify-content:flex-start;
+		}
 	}
 	li {
 		@include font-size(12px);
+		@include respond(tablets) {
+			margin-right:20px;
+		}
 	}
 	a {
 		line-height:40px;
@@ -178,7 +184,11 @@ li a.header--actions-manage {
 	}
 }
 
-.header--menu-search {
+li.header--menu-search {
+	@include respond(tablets) {
+		margin-left:auto;
+		margin-right:0;
+	}
 	a {
 		padding-right:5px;
 		i {
