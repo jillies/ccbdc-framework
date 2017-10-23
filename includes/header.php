@@ -35,14 +35,14 @@
 		<div class="header--bottom">
 			<nav class="header--menu-top">
 				<ul>
-					<li class="header--menu-dropdown"><a href="#">Explore <i class="material-icons">keyboard_arrow_down</i></a></li>
+					<li class="header--menu-dropdown"><a href="#">Explore<i class="material-icons">keyboard_arrow_down</i></a></li>
 					<li><a href="#">Devices</a></li>
 					<li><a href="#">Plans</a></li>
 					<li><a href="#">Experiences</a></li>
 					<li class="header--menu-search"><a href="#"><i class="material-icons">search</i></a></li>
 				</ul>
 			</nav>
-			<nav class="header--menu-extended">
+			<div class="header--menu-extended">
 				<div class="header--menu-quicklist">
 					<ul>
 						<li><a href="#">For Business</a></li>
@@ -92,7 +92,7 @@
 						<li><a href="#">Find a Store</a></li>
 					</ul>
 				</div>
-			</nav>
+			</div>
 		</div>
 	</header>
 </div>

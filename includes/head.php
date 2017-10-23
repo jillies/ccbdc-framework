@@ -7,6 +7,7 @@
 	<title><?php echo $title; ?></title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<meta http-equiv="cleartype" content="on">
 
     <link rel="shortcut icon" href="images/favicon.ico">
 

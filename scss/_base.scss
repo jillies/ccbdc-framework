@@ -16,8 +16,13 @@ body {
   }
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 html, body {
   height: 100%;
+  min-height:100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -152,5 +157,10 @@ input[type="submit"] {
 
 .center {
   text-align:center;
+}
+
+.no-scroll {
+  position:fixed;
+  /*height:100%;*/
 }
 

@@ -1,4 +1,5 @@
 /* Top Header only */
+
 .header--top {
 	padding:0 10px;
 	@include display-flex;
@@ -56,11 +57,13 @@
 	right:0;
 	top:100%;
 	margin:0;
+	z-index:2;
 	width:180px;
 	background:$alabaster;
 	@include border-radius(2px);
 	@include box-shadow($black-a25 0 0 5px);
 	padding:15px 0 0;
+	overflow:auto;
 	a, small, p {
 		color:$black;
 	}
@@ -146,6 +149,11 @@ li a.header--actions-manage {
 
 /* Bottom header */
 
+.header--bottom {
+	position:relative;
+	/*height:100%;*/
+}
+
 .header--menu-top {
 	ul {
 		@include display-flex;
@@ -174,7 +182,7 @@ li a.header--actions-manage {
 }
 
 .header--menu-dropdown {
-	a {
+ 	a {
 		border:1px solid $dove-grey;
 		padding:5px;
 		@include border-radius(5px);
@@ -207,10 +215,19 @@ li.header--menu-search {
 
 .header--menu-extended {
 	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	margin-top:97px;
+	/*height:100%;*/
 	background:$alabaster;
 	padding:20px;
 	@include font-size(12px);
 	font-weight:600;
+	overflow:auto;
+	-webkit-overflow-scrolling: touch;
 	a {
 		color:$emperor;
 		&:hover, &:focus {
@@ -251,6 +268,10 @@ li.header--menu-search {
 	ul {
 		margin-bottom:20px;
 	}
+}
+
+.header--menu-bottomlist {
+	padding-bottom:20px;
 }
 
 
