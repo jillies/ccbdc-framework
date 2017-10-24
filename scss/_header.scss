@@ -221,14 +221,16 @@ li.header--menu-search {
 	bottom:0;
 	width:100%;
 	margin-top:97px;
-	/*height:100%;*/
 	background:$alabaster;
 	padding:20px;
 	@include font-size(12px);
 	font-weight:600;
 	overflow:auto;
 	-webkit-overflow-scrolling: touch;
-	a {
+	@include respond(desktops) {
+		max-width:320px;
+	}
+ 	a {
 		color:$emperor;
 		&:hover, &:focus {
 			text-decoration:underline;
@@ -278,6 +280,10 @@ li.header--menu-search {
 
 // Maxis only
 .brand--maxis {
+	header {
+		background:$white;
+	}
+
 	.header--top {
 		border-bottom:1px solid $mercury;
 	}

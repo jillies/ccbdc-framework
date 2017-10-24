@@ -5,6 +5,8 @@ include("includes/head.php");
 ?>
 
 <?php include("includes/header.php"); ?>
+
+<div class="content--container">
 More to do for the father that I met who was losing his job and choking back the tears, wondering how he would pay $4,500 a month for the drugs his son needs without the health benefits that he counted on. They stood on the Edmund Pettus Bridge, as the blows of billy clubs rained down.
 
 But it is where we start, and starty is all we can do to this world that we HAVE
@@ -27,5 +29,6 @@ Because if you don't have any fresh ideas, then you use stale tactics to scare t
 Those stories - of survival, and freedom, and hope - became our story, my story; the blood that had spilled was our blood, the tears our tears; until this black church, on this bright day, seemed once more a vessel carrying the story of a people into future generations and into a larger world. What the nay-sayers don't understand is that this election has never been about me.
 The fear and anger that it provoked was understandable, but in some cases, it led us to act contrary to our ideals. Since the Islamic Revolution, Iran has played a role in acts of hostage-taking and violence against U.S.
 Thank you. And may God's peace be upon you.
+</div>
 <?php include("includes/footer.php") ; ?>
 <?php include("includes/foot.php") ; ?>

@@ -1,0 +1,7 @@
+.content--container-defer {
+	@include respond(desktops) {
+		position:static;
+		margin-top:97px;
+		clear:both;
+	}
+}

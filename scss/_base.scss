@@ -159,9 +159,16 @@ input[type="submit"] {
   text-align:center;
 }
 
+.fixed-position-desktop {
+  @include respond(desktops) {
+    position:fixed;
+    width:100%;
+    top:0;
+  }
+}
+
 .no-scroll {
   position:fixed;
-  /*height:100%;*/
   @include respond(desktops) {
     position:static;
   }

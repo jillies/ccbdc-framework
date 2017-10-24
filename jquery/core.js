@@ -16,9 +16,13 @@ var dropdownMenuController = dropdownMenuController || (function() {
 			if( $(dropdownMenu).is(':hidden') ) {
 				$(dropdownMenu).show();
 				$("head, body").addClass("no-scroll");
+				$("header").addClass("fixed-position-desktop");
+				$(".content--container").addClass("content--container-defer");
 			} else {
 				$(dropdownMenu).hide();
 				$("head, body").removeClass("no-scroll");
+				$("header").removeClass("fixed-position-desktop");
+				$(".content--container").removeClass("content--container-defer");
  			}
 		});
 	}
