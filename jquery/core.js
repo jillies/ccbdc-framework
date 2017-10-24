@@ -1,6 +1,7 @@
 // For sticky hover fix dropdown functionality in Safari iOS
 (function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document);
 
+//Dropdown menu for Expand
 var dropdownMenuController = dropdownMenuController || (function() { 
 
 	function init() {

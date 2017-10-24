@@ -7,18 +7,18 @@ module.exports = function (grunt) {
             dest: 'jquery/core.js'
         }
     },
+    uglify: {
+        dist: {
+            src : 'jquery/core.js',
+            dest : 'js/core.min.js'
+        }
+    },
     compass: {
         dev: {
             options: {
                 config: 'config.rb',
                 force: true
             }
-        }
-    },
-    uglify: {
-        dist: {
-            src : 'jquery/core.js',
-            dest : 'js/core.min.js'
         }
     },
     watch: {
@@ -29,9 +29,6 @@ module.exports = function (grunt) {
         js: {
            files: ['jquery/*.js'],
             tasks: ['concat', 'uglify'],
-            options: {
-                atBegin: true
-            } 
         }
     },
     browserSync: {
@@ -52,5 +49,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
 
-    grunt.registerTask('default', ['concat:dist', 'compass', 'uglify', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['concat:dist', 'uglify:dist', 'compass', 'browserSync', 'watch']);
 };
