@@ -155,19 +155,44 @@ li a.header--actions-manage {
 }
 
 .header--menu-top {
+	position:relative;
 	ul {
 		@include display-flex;
 		@include flex-direction(row);
-		justify-content:space-between;
 		margin:0 10px;
 		@include respond(tablets) {
 			justify-content:flex-start;
 		}
 	}
 	li {
+		flex:1 1 auto;
 		@include font-size(12px);
 		@include respond(tablets) {
-			margin-right:20px;
+			margin-left:20px;
+		}
+	}
+	li:first-child:nth-last-child(1), 
+	li:first-child:nth-last-child(2), li:first-child:nth-last-child(2) ~ li, 
+	li:first-child:nth-last-child(3), li:first-child:nth-last-child(3) ~ li {
+		flex:0 1 auto;
+		margin-left:20px;
+		&:first-child {
+			margin-left:0;
+		}
+		&.header--menu-search {
+			margin-left:auto;
+			margin-right:0;
+		}
+		&.header--menu-fulldropdown + &.header--menu-dropdown, &.header--menu-dropdown + &.header--menu-dropdown {
+			margin-left:10px;
+		}
+	}
+	li {
+		@include respond(tablets) {
+			flex:0 1 auto;
+		}
+		&.header--menu-fulldropdown + &.header--menu-dropdown, &.header--menu-dropdown + &.header--menu-dropdown {
+			margin-left:10px;
 		}
 	}
 	a {
@@ -181,7 +206,7 @@ li a.header--actions-manage {
 	}
 }
 
-.header--menu-dropdown {
+.header--menu-fulldropdown, .header--menu-dropdown {
  	a {
 		border:1px solid $dove-grey;
 		padding:5px;
@@ -192,11 +217,9 @@ li a.header--actions-manage {
 	}
 }
 
-li.header--menu-search {
-	@include respond(tablets) {
-		margin-left:auto;
-		margin-right:0;
-	}
+.header--menu-top li.header--menu-search {
+	margin-left:auto;
+	margin-right:0;
 	a {
 		padding-right:5px;
 		i {
@@ -213,7 +236,7 @@ li.header--menu-search {
 
 // Full Dropdown Menu
 
-.header--menu-extended {
+.header--menu-fullextend {
 	display:none;
 	position:fixed;
 	top:0;
@@ -276,6 +299,29 @@ li.header--menu-search {
 	padding-bottom:20px;
 }
 
+// Alternative for dropdowns
+.header--menu-extend {
+	display:none;
+	position:absolute;
+	background:$alabaster;
+	padding:20px;
+	top:41px;
+	left:0;
+	width:100vw;
+}
+
+li.header--menu-dropdown {
+	@include inline-block;
+	@include respond(tablets) {
+		position:relative;
+	}
+	&:hover .header--menu-extend, &:focus .header--menu-extend {
+		display:block;
+	}
+	a:active .header--menu-extend {
+		display:none;
+	}
+}
 
 
 // Maxis only
@@ -309,7 +355,7 @@ li.header--menu-search {
 			}
 		}
 	}
-	.header--menu-dropdown {
+	.header--menu-fulldropdown, .header--menu-dropdown { 
 		a {
 			border-color:$apple;
 			&:hover, &:focus {
@@ -318,7 +364,7 @@ li.header--menu-search {
 			}
 		}
 	}
-	.header--menu-extended {
+	.header--menu-fullextend {
 		h6 {
 			a {
 				color:$apple2;
@@ -375,7 +421,7 @@ li.header--menu-search {
 			}
 		}
 	}
-	.header--menu-dropdown {
+	.header--menu-fulldropdown, .header--menu-dropdown {
 		a {
 			border-color:$white;
 			&:hover, &:focus {
@@ -397,7 +443,7 @@ li.header--menu-search {
 			}
 		}
 	}
-	.header--menu-extended {
+	.header--menu-fullextend {
 		h6 {
 			a {
 				color:$mine-shaft;

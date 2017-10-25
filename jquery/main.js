@@ -10,15 +10,17 @@ var dropdownMenuController = dropdownMenuController || (function() {
 
 	function showMenu() {
 
-		var dropdownMenu = ".header--menu-extended";
+		var dropdownMenu = ".header--menu-fullextend";
 
-		$(".header--menu-dropdown a").click(function(){
+		$(".header--menu-fulldropdown a").click(function(){
 			if( $(dropdownMenu).is(':hidden') ) {
+				$(this).find("i").html("keyboard_arrow_up");
 				$(dropdownMenu).show();
 				$("head, body").addClass("no-scroll");
 				$("header").addClass("fixed-position-desktop");
 				$(".content--container").addClass("content--container-defer");
 			} else {
+				$(this).find("i").html("keyboard_arrow_down");
 				$(dropdownMenu).hide();
 				$("head, body").removeClass("no-scroll");
 				$("header").removeClass("fixed-position-desktop");
