@@ -1,5 +1,7 @@
 /* Top Header only */
-
+header {
+	width:100vw;
+}
 .header--top {
 	padding:0 10px;
 	@include display-flex;
@@ -151,17 +153,17 @@ li a.header--actions-manage {
 
 .header--bottom {
 	position:relative;
-	/*height:100%;*/
 }
 
 .header--menu-top {
-	position:relative;
 	ul {
 		@include display-flex;
 		@include flex-direction(row);
 		margin:0 10px;
+		position:relative;
 		@include respond(tablets) {
 			justify-content:flex-start;
+			position:static;
 		}
 	}
 	li {
@@ -176,15 +178,19 @@ li a.header--actions-manage {
 	li:first-child:nth-last-child(3), li:first-child:nth-last-child(3) ~ li {
 		flex:0 1 auto;
 		margin-left:20px;
+		&.header--menu-fulldropdown + &.header--menu-dropdown, &.header--menu-dropdown + &.header--menu-dropdown {
+			margin-left:10px;
+		}
+		&.header--menu-dropdown {
+			margin-left:10px;
+		}
 		&:first-child {
 			margin-left:0;
 		}
 		&.header--menu-search {
 			margin-left:auto;
 			margin-right:0;
-		}
-		&.header--menu-fulldropdown + &.header--menu-dropdown, &.header--menu-dropdown + &.header--menu-dropdown {
-			margin-left:10px;
+			text-align:right;
 		}
 	}
 	li {
@@ -193,6 +199,14 @@ li a.header--actions-manage {
 		}
 		&.header--menu-fulldropdown + &.header--menu-dropdown, &.header--menu-dropdown + &.header--menu-dropdown {
 			margin-left:10px;
+		}
+		&:first-child {
+			margin-left:0;
+		}
+		&.header--menu-search {
+			margin-left:auto;
+			margin-right:0;
+			text-align:right;
 		}
 	}
 	a {
@@ -300,23 +314,54 @@ li a.header--actions-manage {
 }
 
 // Alternative for dropdowns
-.header--menu-extend {
+div.header--menu-extend {
 	display:none;
 	position:absolute;
 	background:$alabaster;
 	padding:20px;
 	top:41px;
-	left:0;
+	left:-10px;
 	width:100vw;
+	@include respond(tablets) {
+		left:0;
+	}
+	@include respond(desktops) {
+		width:320px;
+	}
+	small {
+		width:100%;
+		@include inline-block;
+	}
+	a {
+		@include font-size(12px);
+		border:none;
+		padding:0;
+		@include inline-block;
+		line-height:1em;
+	}
+	small {
+		a {
+			color:$emperor;
+			&:hover, &:focus {
+				background:none;
+				text-decoration:underline;
+			}
+		}
+	}
 }
 
 li.header--menu-dropdown {
 	@include inline-block;
-	@include respond(tablets) {
-		position:relative;
-	}
 	&:hover .header--menu-extend, &:focus .header--menu-extend {
 		display:block;
+	}
+	@include respond(desktops) {
+		position:relative;
+		&:first-child {
+			div.header--menu-extend {
+				left:-10px;
+			}
+		}
 	}
 	a:active .header--menu-extend {
 		display:none;
@@ -361,6 +406,15 @@ li.header--menu-dropdown {
 			&:hover, &:focus {
 				background:$apple;
 				color:$white;
+			}
+		}
+		small {
+			a {
+				color:$emperor;
+				&:hover, &:focus {
+					background:none;
+					color:$apple;
+				}
 			}
 		}
 	}
@@ -431,7 +485,7 @@ li.header--menu-dropdown {
 			}
 		}
 	}
-	.header--menu-search {
+	li.header--menu-search {
 		a {
 			i {
 				color:$white;
