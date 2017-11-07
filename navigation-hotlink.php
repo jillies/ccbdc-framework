@@ -5,6 +5,7 @@ include("includes/head.php");
 ?>
 <div class="brand--hotlink">
 <?php include("includes/navigation-hotlink.php"); ?>
+<?php include("includes/search.php"); ?>
 
 <div class="content--container">
 	Content

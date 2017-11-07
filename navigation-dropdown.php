@@ -5,6 +5,7 @@ include("includes/head.php");
 ?>
 <div class="brand--maxis">
 <?php include("includes/navigation-dropdown.php"); ?>
+<?php include("includes/search.php"); ?>
 
 <div class="content--container">
 	Content

@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
         dist: {
-            src: ['jquery/main.js'],
+            src: ['jquery/jquery-ui.js','jquery/main.js'],
             dest: 'jquery/core.js'
         }
     },

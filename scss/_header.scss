@@ -222,7 +222,6 @@ li a.header--actions-manage {
 
 .header--menu-fulldropdown, .header--menu-dropdown {
  	a {
-		border:1px solid $dove-grey;
 		padding:5px;
 		@include border-radius(5px);
 		i {
@@ -402,14 +401,16 @@ li.header--menu-dropdown {
 	}
 	.header--menu-fulldropdown, .header--menu-dropdown { 
 		a {
-			border-color:$apple;
+			background:$apple;
+			color:$white;
 			&:hover, &:focus {
-				background:$apple;
+				background:$sushi;
 				color:$white;
 			}
 		}
 		small {
 			a {
+				background:none;
 				color:$emperor;
 				&:hover, &:focus {
 					background:none;
@@ -477,11 +478,11 @@ li.header--menu-dropdown {
 	}
 	.header--menu-fulldropdown, .header--menu-dropdown {
 		a {
+			background:$maroon;
 			border-color:$white;
 			&:hover, &:focus {
-				background:$maroon;
+				background:$tempress;
 				color:$white;
-				border-color:$maroon;
 			}
 		}
 	}
