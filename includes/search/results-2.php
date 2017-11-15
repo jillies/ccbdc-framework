@@ -1,18 +1,14 @@
-<div class="search--results-listing grid">
-	<h5>Bundles (2)</h5>
+<div class="search--results-listing">
+	<h6>Others (50)</h6>
 	<ul>
+		<?php for ($x = 0; $x <= 9; $x++) { ?>
 		<li>
-			<a href="#"><img src="images/iphone-se.png" alt="iPhone SE" />
-				<span class="badge--blue">New</span>
-				<p>iPhone SE</p>
-				<small>From RM1,749</small>
+			<a href="#">
+				<p><strong><?php echo $x; ?> MaxisOne Prime</strong></p>
+				<p>Now you and your entire family can enjoy endless high-speed home and mobile data, the latest devices, and more.</p>
+				<small>https://www.maxis.com.my/en/personal/plans/family/maxisoneprime.html</small>
 			</a>
 		</li>
-		<li>
-			<a href="#"><img src="images/iphone-se.png" alt="iPhone SE" />
-				<p>iPhone SE</p>
-				<small>From RM1,749</small>
-			</a>
-		</li>
+		<?php } ?>
 	</ul>
 </div>

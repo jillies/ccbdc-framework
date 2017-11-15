@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
         dist: {
-            src: ['jquery/jquery-ui.js','jquery/main.js'],
+            src: ['jquery/jquery-ui.js','jquery/infinite-scroll.pkgd.min.js','jquery/jquery-ui-autocomplete-with-clear-button.js','jquery/main.js'],
             dest: 'jquery/core.js'
         }
     },
@@ -33,7 +33,7 @@ module.exports = function (grunt) {
     },
     browserSync: {
         bsFiles: {
-            src : ['css/*.css', '*.php', 'includes/*.php', 'js/*.js']
+            src : ['css/*.css', '*.php', 'includes/*/**.php', 'includes/*.php', 'js/*.js']
         },
         options: {
             watchTask: true,

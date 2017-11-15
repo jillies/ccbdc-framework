@@ -1,0 +1,27 @@
+.badge {
+	display:inline;
+	clear:both;
+	font-weight:600;
+	@include font-size(12px);
+	padding:2px 8px;
+	@include border-radius(3px);
+	color:$white;
+	background:$silver;
+
+	&.information {
+		background:$lochmara;
+	}
+
+	&.success {
+		background:$sushi;
+	}
+
+	&.warning {
+		background:$lightning-yellow;
+	}
+
+	&.error {
+		background:$red-orange;
+	}
+
+}

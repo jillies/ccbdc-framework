@@ -25,9 +25,11 @@ html, body {
   min-height:100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
-  /*color:$medium-green;*/
+h1, h2, h3, h4, h5 {
+  font-family:$header-font-family;
+  strong {
+    font-family:$headerbold-font-family;
+  }
 }
 
 h1, h2, h3 {
@@ -135,10 +137,11 @@ input {
   width:100%;
   padding:10px;
   margin:0.5em 0 0.25em;
-  /*border:1px solid $border-grey;*/
-  @include font-size(16px);
+  border:1px solid $silver;
+  @include font-size(14px);
   @include border-radius(4px);
   @include transition(all, 0.2s ease-in-out);
+  outline: none;
   &:invalid {
     box-shadow:none;
   }

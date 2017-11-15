@@ -11,6 +11,7 @@ $font-family: aauxnext-regular-webfont;
 $bold-family: aauxnext-bold-webfont;
 $body-font-family: "Open Sans", Helvetica, Arial, sans-serif;
 $header-font-family: "aauxnext-regular-webfont", Helvetica, Arial, sans-serif;
+$headerbold-font-family: "aauxnext-bold-webfont", Helvetica, Arial, sans-serif;
 $button-font-family: "aauxnext-bold-webfont", Helvetica, Arial, sans-serif;
 $font-smoothing: antialiased;
 $body-font-weight: $font-weight-regular;
@@ -18,7 +19,7 @@ $body-font-weight: $font-weight-regular;
 // Responsiveness Settings
 $min-device-width: 320px; 				// iPhone Portrait
 $iphone6plus-width: 414px; 				// iPhone Portrait
-$andriod-device-width: 480px; 			// Base Android Phone
+$android-device-width: 480px; 			// Base Android Phone
 $landscape-device-width: 533px; 		// iPhone5 Landscape
 $tablet-device-width: 768px;			// iPad Portrait
 $small-tablet-width: 600px;				// Small Android Tablets
@@ -71,6 +72,10 @@ $green-haze: rgb(0,178,51);
 $fun-green: rgb(0,129,72);
 $flirt: rgb(180,0,102);
 $selective-yellow: rgb(255,186,8);
+
+// Additional Colours (only for framework purposes)
+$lightning-yellow: rgb(246,190,28);
+$red-orange: rgb(255,74,38);
 
 // Alpha colours
 $black-a25: rgba(0,0,0,0.25);

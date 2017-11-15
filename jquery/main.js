@@ -82,8 +82,8 @@ var searchController = searchController || (function() {
     });
     $(function() {
         var data = [
-            { label: "iPhone SE", id: "1", category: "Products" },
             { label: "Apple iPhone", id: "2", category: "" },
+            { label: "iPhone SE", id: "1", category: "Products" },
             { label: "iPhone X", id: "3", category: "Products" },
             { label: "iPhone 8", id: "4", category: "Products" },
             { label: "iPhone 7", id: "5", category: "Products" },
@@ -101,31 +101,17 @@ var searchController = searchController || (function() {
         });
     });
 
-// Infinite Scrolling for Search Results
-// $('.search--results-container').infiniteScroll({
-// 	path: '.pagination__next',
-// 	append: '.search--results-listing',
-// 	status: '.page-load-status'
-// });
-
 var infScroll = new InfiniteScroll( '.search--results-container', {
-  path: function() {
-    return 'includes/search/results-' + ( ( this.loadCount + 1 ) ) + '.php';
-  },
-  append: '.search--results-listing',
-  // checkLastPage: true,
-  prefill: false,
-  // responseType: 'document',
-  // outlayer: false,
-  // scrollThreshold: 400,
-  elementScroll: '.search--container',
-  // loadOnScroll: true,
-  // history: 'push',
-  // historyTitle: false,
-  // hideNav: '.pagination',
-  debug: true,
- 	// path: '.pagination__next',
-	append: '.search--results-listing',
+  	path: function() {
+    	return 'includes/search/results-' + ( ( this.loadCount + 1 ) ) + '.php';
+  	},
+  	append: '.search--results-listing',
+  	checkLastPage: false,
+  	prefill: false,
+  	elementScroll: '.search--container',
+  	history: false,
+  	historyTitle: false,
+  	debug: true,
 	status: '.page-load-status'
 })
 

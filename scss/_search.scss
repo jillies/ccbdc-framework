@@ -6,7 +6,165 @@
 	width:100vw;
 	height:100vh;
 	background:$white-a;
-	padding:20px;
+	/*padding:20px;*/
 	overflow:auto;
 }
 
+.search--close {
+	position:relative;
+	right:0;
+	top:0;
+	padding:20px 20px 0 20px;
+	text-align:right;
+	a {
+		color:$dove-grey;
+		@include font-size(12px);
+		&:hover, &:focus {
+			color:$mine-shaft;
+		}
+	}
+}
+
+.search--input {
+	position:relative;
+	padding:0 20px 10px 20px;
+	&::before {
+		font-family: "Material Icons";
+		content: "\E8B6";
+		@include font-size(24px);
+		position:absolute;
+		top:16px;
+		left:30px;
+		color:$silver;
+	}
+	input {
+		padding-left:35px;
+	}
+}
+
+.ui-menu {
+	margin-top:5px;
+	background:$white;
+	@include box-shadow($dove-grey-a 0 0 5px);
+	@include border-bottom-radius(5px);
+	@include font-size(14px);
+	color:$mine-shaft;
+	.ui-menu-item-wrapper {
+		padding:10px 10px 10px 25px;
+	}
+	.ui-autocomplete-category {
+		padding:10px 10px;
+	}
+	.ui-state-active {
+		margin:0;
+		background:$mercury;
+	}
+	.ui-menu-divider {
+		padding:0;
+		border-bottom:1px solid $mercury;
+	}
+}
+
+.ui-menu-item {
+	div {
+		max-width:280px;
+	    white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color:$dove-grey;
+		@include respond(iphone-plus) {
+			max-width:374px;
+		}
+		@include respond(tablets) {
+			max-width:560px;
+		}
+		@include respond(desktops) {
+			max-width:none;
+		}
+	}
+}
+
+.search--results {
+	small, h6 {
+		padding:0 20px;
+	}
+	h6 {
+		font-weight:600;
+		margin-bottom:5px;
+	}
+}
+
+.search--results-container {
+	margin-top:20px;
+}
+
+.search--results-listing {
+	margin-bottom:20px;
+	li {
+		padding:20px 20px 0 20px;
+	}
+	small {
+		padding:0;
+	}
+	img {
+		width:70px;
+		height:auto;
+		clear:both;
+	}
+	small {
+		clear:both;
+		width:100%;
+		@include inline-block;
+		margin-bottom:5px;
+		color:$lochmara;
+		word-wrap:break-word;
+	}
+	a {
+		color:$mine-shaft;
+		&:hover, &:focus {
+			color:$silver;
+			img {
+				@include opacity(0.6);
+			}
+			small {
+				color:$mercury;
+			}
+		}
+	}
+	&.grid {
+		ul {
+			border-top:1px solid $mercury;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		    justify-items: center;
+		    @include respond(tablets) {
+		    	grid-template-columns: repeat(3, 1fr);
+		    }
+		    @include respond(desktops) {
+		    	grid-template-columns: repeat(4, 1fr);
+		    }
+		}
+		li {
+		    padding: initial;
+		    max-width: none;
+		    padding:30px 10px;
+		    border-bottom:1px solid $mercury;
+		    &:nth-child(odd) {
+		    	border-right:1px solid $mercury;
+		    }
+		}
+		li,span,small {
+			text-align:center;
+		}
+		small {
+			color:$mine-shaft;
+		}
+	}
+}
+
+.search--results-status {
+	width:100%;
+	margin:10px 0;
+	min-height:15px;
+	@include inline-block;
+}
