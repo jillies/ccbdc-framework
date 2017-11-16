@@ -25,9 +25,17 @@
 	}
 }
 
+
+.search--input, .search--results {
+	max-width:$max-desktop-width;
+	margin:0 auto;
+}
 .search--input {
 	position:relative;
 	padding:0 20px 10px 20px;
+	@include respond(max-grid-width) {
+		padding:0 0 10px;
+	}
 	&::before {
 		font-family: "Material Icons";
 		content: "\E8B6";
@@ -36,6 +44,9 @@
 		top:16px;
 		left:30px;
 		color:$silver;
+		@include respond(max-grid-width) {
+			left:10px;
+		}
 	}
 	input {
 		padding-left:35px;
@@ -87,10 +98,15 @@
 .search--results {
 	small, h6 {
 		padding:0 20px;
+		@include respond(max-grid-width) {
+			padding:0;
+		}
 	}
 	h6 {
 		font-weight:600;
-		margin-bottom:5px;
+		padding-bottom:5px;
+		border-bottom:1px solid $mercury;
+		margin-top:40px;
 	}
 }
 
@@ -99,16 +115,18 @@
 }
 
 .search--results-listing {
-	margin-bottom:20px;
 	li {
 		padding:20px 20px 0 20px;
+		@include respond(max-grid-width) {
+			padding:20px 0 0;
+		}
 	}
 	small {
 		padding:0;
 	}
 	img {
-		width:70px;
-		height:auto;
+		width:auto;
+		height:145px;
 		clear:both;
 	}
 	small {
@@ -123,7 +141,7 @@
 		color:$mine-shaft;
 		&:hover, &:focus {
 			color:$silver;
-			img {
+			img, span {
 				@include opacity(0.6);
 			}
 			small {
@@ -133,15 +151,14 @@
 	}
 	&.grid {
 		ul {
-			border-top:1px solid $mercury;
+			max-width:none;
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-		    justify-items: center;
 		    @include respond(tablets) {
 		    	grid-template-columns: repeat(3, 1fr);
 		    }
 		    @include respond(desktops) {
-		    	grid-template-columns: repeat(4, 1fr);
+		    	grid-template-columns: repeat(5, 1fr);
 		    }
 		}
 		li {
@@ -151,6 +168,21 @@
 		    border-bottom:1px solid $mercury;
 		    &:nth-child(odd) {
 		    	border-right:1px solid $mercury;
+		    }
+		    @include respond(tablets) {
+		    	border-right:1px solid $mercury;
+		    	&:nth-child(3n+3) {
+		    		border-right:none;
+		    	}
+		    }
+		    @include respond(desktops) {
+		    	border-right:1px solid $mercury;
+		    	&:nth-child(3n+3) {
+		    		border-right:1px solid $mercury;
+		    	}
+		    	&:nth-child(6n+6), &:first-child {
+		    		border-left:1px solid $mercury;
+		    	}
 		    }
 		}
 		li,span,small {
@@ -162,9 +194,22 @@
 	}
 }
 
-.search--results-status {
+.search--results-liststatus {
 	width:100%;
 	margin:10px 0;
 	min-height:15px;
 	@include inline-block;
 }
+
+	.search--results-status {
+		text-align:center;
+	}
+	.infinite-scroll-last {
+		border-top:1px solid $mercury;
+		margin-top:30px;
+		padding:20px 0;
+	}
+
+	.infinite-scroll-error {
+		padding:50px 0;
+	}

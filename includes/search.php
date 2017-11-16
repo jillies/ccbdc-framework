@@ -14,12 +14,18 @@
 			<?php include("includes/search/results-0.php"); ?>
 		</div>
 
-		<div class="page-load-status">
-		  <div class="loader-ellips infinite-scroll-request">
-		    loading
+		<div class="search--results-status">
+		  <div class="infinite-scroll-request">
+		  	<div class="preloader--container">
+		  		Loading...
+		  	</div>
 		  </div>
-		  <p class="infinite-scroll-last">End of content</p>
-		  <p class="infinite-scroll-error">No more pages to load</p>
+		  <div class="infinite-scroll-last">
+		  	<small>All results loaded. <a href="javascript:void(0);">Search again?</a></small>
+		  </div>
+		  <div class="infinite-scroll-error">
+		  	<p>Apologies, there seems to be an error!<br />Please try again later.</p>
+		  </div>
 		</div>
 
 

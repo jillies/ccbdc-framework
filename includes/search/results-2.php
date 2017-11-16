@@ -5,7 +5,7 @@
 		<li>
 			<a href="#">
 				<p><strong><?php echo $x; ?> MaxisOne Prime</strong></p>
-				<p>Now you and your entire family can enjoy endless high-speed home and mobile data, the latest devices, and more.</p>
+				<p>Now you and your entire family can enjoy endless high-speed home and mobile data, the latest devices, and more. Now you and your entire family can enjoy endless high-speed home and mobile data, the latest devices, and more.</p>
 				<small>https://www.maxis.com.my/en/personal/plans/family/maxisoneprime.html</small>
 			</a>
 		</li>

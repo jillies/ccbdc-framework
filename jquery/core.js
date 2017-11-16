@@ -2721,7 +2721,7 @@ var searchController = searchController || (function() {
 		$(".header--menu-search a").click(function(){
 			if( $(searchOverlay).is(':hidden') ) {
 				$(searchOverlay).show();
-				// $("head, body").addClass("no-scroll");
+				$("head, body").addClass("no-scroll");
 				// $("header").addClass("fixed-position-desktop");
 			} else {
 				$(searchOverlay).hide();
@@ -2774,20 +2774,27 @@ var searchController = searchController || (function() {
 
 var infScroll = new InfiniteScroll( '.search--results-container', {
   	path: function() {
-    	return 'includes/search/results-' + ( ( this.loadCount + 1 ) ) + '.php';
+        if ( this.loadCount < 3 ) {
+    	   return 'includes/search/results-' + ( ( this.loadCount + 1 ) ) + '.php';
+        }
   	},
   	append: '.search--results-listing',
-  	checkLastPage: false,
+  	checkLastPage: true,
   	prefill: false,
   	elementScroll: '.search--container',
   	history: false,
   	historyTitle: false,
   	debug: true,
-	status: '.page-load-status'
+	status: '.search--results-status'
 })
 
 $(function() {
     dropdownMenuController.init();
     searchController.init();
 });
+
+$(".infinite-scroll-last a").click(function() {
+    $(".search--container").animate({scrollTop: 0 });
+});
+
 

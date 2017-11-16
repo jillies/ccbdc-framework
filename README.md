@@ -5,6 +5,7 @@ This framework is intended to be used for the new Maxis and Hotlink websites - a
 Here's a guide on how to use a template or component:
 
 ##Templates
+======
 ###Header
 
 Navigations are interchangable when required - the ability to use the normal standard navigations, expand panel and dropdowns. You can use these all permutations of these or not at all.
@@ -12,9 +13,7 @@ Navigations are interchangable when required - the ability to use the normal sta
 Colours and backgrounds are managed by using a .brand--name div that wraps around the entire HTML
 
 ```HTML
-<div class="brand--maxis">
-	Your content here
-</div>
+<div class="brand--maxis">Your content here</div>
 ```
 
 The sample of all headers below:
@@ -23,7 +22,7 @@ The sample of all headers below:
 [Navigation with an expand (Hotlink)](navigation-hotlink.php);
 
 ##Components
-
+======
 ###Badges
 Badges can be used independently into any container - all you'll need to do is to use a span to contain it and it will react as expected.
 
@@ -37,7 +36,5 @@ There are 4 different types of badges, and a default if no type is specified. Us
 * error (an orange badge used for error-related badges)
 
 ```HTML
-<span class="badge information">
-	New
-</span>
+<span class="badge information">New</span>
 ```
