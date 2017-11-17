@@ -1,12 +1,11 @@
 .search--container {
-	/*display:none;*/
+	display:none;
 	position:fixed;
 	top:0;
 	left:0;
 	width:100vw;
 	height:100vh;
 	background:$white-a;
-	/*padding:20px;*/
 	overflow:auto;
 }
 
@@ -20,7 +19,7 @@
 		color:$dove-grey;
 		@include font-size(12px);
 		&:hover, &:focus {
-			color:$mine-shaft;
+			color:$silver;
 		}
 	}
 }

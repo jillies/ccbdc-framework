@@ -2719,16 +2719,18 @@ var searchController = searchController || (function() {
 		var searchOverlay = ".search--container";
 
 		$(".header--menu-search a").click(function(){
-			if( $(searchOverlay).is(':hidden') ) {
-				$(searchOverlay).show();
-				$("head, body").addClass("no-scroll");
-				// $("header").addClass("fixed-position-desktop");
-			} else {
-				$(searchOverlay).hide();
-				$("head, body").removeClass("no-scroll");
-				$("header").removeClass("fixed-position-desktop");
- 			}
+			$(searchOverlay).show();
+			$("head, body").addClass("no-scroll");
+			$("header").addClass("fixed-position-desktop");
 		});
+
+        $(".search--close a").click(function(){
+            $(searchOverlay).hide();
+            $("head, body").removeClass("no-scroll");
+            $("header").removeClass("fixed-position-desktop");
+        });
+
+
 	}
 
 	return {

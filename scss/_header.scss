@@ -169,7 +169,7 @@ li a.header--actions-manage {
 	li {
 		flex:1 1 auto;
 		@include font-size(12px);
-		@include respond(tablets) {
+		@include respond(iphone-plus) {
 			margin-left:20px;
 		}
 	}
@@ -194,7 +194,7 @@ li a.header--actions-manage {
 		}
 	}
 	li {
-		@include respond(tablets) {
+		@include respond(iphone-plus) {
 			flex:0 1 auto;
 		}
 		&.header--menu-fulldropdown + &.header--menu-dropdown, &.header--menu-dropdown + &.header--menu-dropdown {
