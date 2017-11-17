@@ -8,7 +8,7 @@ Here's a guide on how to use a template or component:
 Templates
 ======
 
-#### Header
+## Header
 
 
 Navigations are interchangable when required - the ability to use the normal standard navigations, expand panel and dropdowns. You can use these all permutations of these or not at all.
