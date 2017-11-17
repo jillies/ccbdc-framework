@@ -19,12 +19,10 @@ Colours and backgrounds are managed by using a .brand--name div that wraps aroun
 ```
 
 The sample of all headers below:
-[Full Navigation with an expand (Maxis)](navigation-full.php);
-
-[Navigation with dropdown (Maxis)](navigation-dropdown.php);
-
-[Navigation with an expand (Hotlink)](navigation-hotlink.php);
+[Full Navigation with an expand (Maxis)](navigation-full.php)
+[Navigation with dropdown (Maxis)](navigation-dropdown.php)
+[Navigation with an expand (Hotlink)](navigation-hotlink.php)
 
 ##Components
 ======
-[Badges](readme/badges.md);
+[Badges](readme/badges.md)
