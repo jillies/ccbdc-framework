@@ -5,7 +5,9 @@ This framework is intended to be used for the new Maxis and Hotlink websites - a
 Here's a guide on how to use a template or component:
 
 ##Templates
+
 ======
+
 ###Header
 
 Navigations are interchangable when required - the ability to use the normal standard navigations, expand panel and dropdowns. You can use these all permutations of these or not at all.
