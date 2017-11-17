@@ -1,6 +1,5 @@
-###Badges
-
-===
+Badges
+======
 
 Badges can be used independently into any container - all you'll need to do is to use a span to contain it and it will react as expected.
 
