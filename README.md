@@ -30,3 +30,4 @@ The sample of all headers below:
 Components
 ======
 [Badges](readme/badges.md)
+[Preloaders](readme/preloader.md)
