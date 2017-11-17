@@ -1,4 +1,7 @@
 ###Badges
+
+===
+
 Badges can be used independently into any container - all you'll need to do is to use a span to contain it and it will react as expected.
 
 If you have a specific location to place it you will need to wrap it and manage it there instead of directly on the badge.
