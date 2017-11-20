@@ -1,16 +1,13 @@
 footer {
 	background:$mine-shaft;
 	color:$white;
-	padding:15px 10px 25px;
+	padding:15px 15px 25px 10px;
 	a {
 		color:$white;
 		&:hover, &:focus {
 			color:$silver;
 		}
 	}
-}
-
-.footer--thin {
 }
 
 .footer--logo-lang {
@@ -35,16 +32,24 @@ footer {
 
 .footer--lang {
 	margin-left:auto;
-	margin-right:5px;
 }
 
 .footer--copyright {
 	color:$dusty-grey;
 	margin-bottom:10px;
+	@include respond(desktops) {
+		order:1;
+		flex:2 0px;
+		margin-bottom:0;
+	}
 }
 
 .footer--sublinks {
 	@include font-size(12px);
+	@include respond(desktops) {
+		order:3;
+		margin-top:-10px;
+	}
 	li {
 		display:inline;
 		padding-right:7px;
@@ -52,6 +57,30 @@ footer {
 		border-right:1px solid $dusty-grey;
 		&:last-child {
 			border-right:none;
+		}
+	}
+}
+
+.footer--forum {
+	margin-top:20px;
+	@include respond(desktops) {
+		text-align:right;
+		order:2;
+		margin-top:0;
+	}
+}
+
+.footer--bottom {
+	@include respond(desktops) {
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-flow(row wrap);
+		div {
+			width:50%;
+			small {
+				float:left;
+				width:100%;
+			}
 		}
 	}
 }

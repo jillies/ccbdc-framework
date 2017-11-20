@@ -10,6 +10,10 @@ include("includes/head.php");
 <div class="content--container">
 	Content
 </div>
-<?php include("includes/footer.php") ; ?>
+<?php
+
+$brand = "hotlink";
+
+include("includes/footer.php") ; ?>
 </div>
 <?php include("includes/foot.php") ; ?>
