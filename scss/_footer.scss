@@ -1,0 +1,57 @@
+footer {
+	background:$mine-shaft;
+	color:$white;
+	padding:15px 10px 25px;
+	a {
+		color:$white;
+		&:hover, &:focus {
+			color:$silver;
+		}
+	}
+}
+
+.footer--thin {
+}
+
+.footer--logo-lang {
+	@include display-flex;
+	@include flex-direction(row);
+	align-items:flex-end;
+	margin-bottom:15px;
+}
+
+	.brand--hotlink {
+		.footer--logo-lang {
+			align-items: center;
+		}
+	}
+
+.footer--logo {
+	img {
+		height:25px;
+		width:auto;
+	}
+}
+
+.footer--lang {
+	margin-left:auto;
+	margin-right:5px;
+}
+
+.footer--copyright {
+	color:$dusty-grey;
+	margin-bottom:10px;
+}
+
+.footer--sublinks {
+	@include font-size(12px);
+	li {
+		display:inline;
+		padding-right:7px;
+		margin-right:5px;
+		border-right:1px solid $dusty-grey;
+		&:last-child {
+			border-right:none;
+		}
+	}
+}
