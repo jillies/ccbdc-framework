@@ -39,7 +39,6 @@ footer {
 	margin-bottom:10px;
 	@include respond(desktops) {
 		order:1;
-		flex:2 0px;
 		margin-bottom:0;
 	}
 }
@@ -72,15 +71,103 @@ footer {
 
 .footer--bottom {
 	@include respond(desktops) {
-		@include display-flex;
-		@include flex-direction(row);
-		@include flex-flow(row wrap);
+		display:grid;
+		grid-template-columns: repeat(2, 1fr);
+		small {
+			float:left;
+			width:100%;
+		}
+	}
+}
+
+.footer--thin {
+	.footer--bottom {
+		display:inline;
 		div {
-			width:50%;
-			small {
-				float:left;
-				width:100%;
+			width:100%;
+		}
+		small {
+			float:none;
+		}
+	}
+
+	.footer--copyright {
+		margin-bottom:10px;
+	}
+
+	.footer--sublinks {
+		margin-top:0;
+	}
+}
+
+.footer--links {
+	padding-top:5px;
+	margin-bottom:15px;
+	border-bottom:1px solid $dove-grey;
+	li {
+		@include font-size(12px);
+		line-height:1.75em;
+	}
+}
+
+.footer--link {
+	margin-bottom:15px;
+}
+
+.footer--title {
+	margin-bottom:5px;
+	font-weight:700;
+}
+
+.footer--toll-free {
+	margin-bottom:15px;
+}
+
+.footer--social {
+	ul {
+		@include display-flex;
+	}
+	li {
+		margin-right:10px;
+	}
+	a {
+		width:25px;
+		height:25px;
+		@include inline-block;
+		text-align:center;
+		svg {
+			fill:$mercury;
+		}
+		&:hover, &:focus {
+			svg {
+				fill:$dove-grey;
 			}
 		}
 	}
+}
+
+.brand--maxis {
+
+	.footer--toll-free {
+		a {
+			color:$sushi;
+			&:hover, &:focus {
+				color:$turbo;
+			}
+		}
+	}
+
+}
+
+.brand--hotlink {
+
+	.footer--toll-free {
+		a {
+			color:$froly;
+			&:hover, &:focus {
+				color:$selective-yellow;
+			}
+		}
+	}
+
 }
