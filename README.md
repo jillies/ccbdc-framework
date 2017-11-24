@@ -30,6 +30,7 @@ The sample of all headers below:
 
 ###Footer
 
+
 There are two types of footers, one to be used fully on a marketing standpoint, the other thin one for functional purposes.
 
 View the samples below:
