@@ -27,6 +27,7 @@ The sample of all headers below:
 
 [Navigation with an expand (Hotlink)](navigation-hotlink.php)
 
+
 ###Footer
 
 There are two types of footers, one to be used fully on a marketing standpoint, the other thin one for functional purposes.
