@@ -17,12 +17,6 @@ footer {
 	margin-bottom:15px;
 }
 
-	.brand--hotlink {
-		.footer--logo-lang {
-			align-items: center;
-		}
-	}
-
 .footer--logo {
 	img {
 		height:25px;
@@ -104,6 +98,13 @@ footer {
 	padding-top:5px;
 	margin-bottom:15px;
 	border-bottom:1px solid $dove-grey;
+	@include respond(tablets) {
+		display:grid;
+		grid-template-columns:repeat(2,1fr);
+	}
+	@include respond(desktops) {
+		grid-template-columns:repeat(4,1fr);
+	}
 	li {
 		@include font-size(12px);
 		line-height:1.75em;
@@ -121,6 +122,9 @@ footer {
 
 .footer--toll-free {
 	margin-bottom:15px;
+	@include respond(tablets) {
+		margin-bottom:10px;
+	}
 }
 
 .footer--social {
@@ -137,6 +141,8 @@ footer {
 		text-align:center;
 		svg {
 			fill:$mercury;
+			@include inline-block;
+  			vertical-align: middle;
 		}
 		&:hover, &:focus {
 			svg {
@@ -145,6 +151,9 @@ footer {
 		}
 	}
 }
+
+
+
 
 .brand--maxis {
 
@@ -160,6 +169,11 @@ footer {
 }
 
 .brand--hotlink {
+
+	.footer--logo-lang {
+		align-items: center;
+	}
+
 
 	.footer--toll-free {
 		a {

@@ -40,7 +40,7 @@
 				<small class="footer--title">Follow us</small>
 				<ul>
 					<li><a href="#">
-						<svg width="8" height="17">
+						<svg width="9" height="18">
 	    					<use xlink:href="#icon-facebook"></use>
 					  	</svg>
 						</a></li>
