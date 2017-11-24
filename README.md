@@ -31,7 +31,7 @@ The sample of all headers below:
 ### Footer
 
 
-There are two types of footers, one to be used fully on a marketing standpoint, the other thin one for functional purposes.
+There are two types of footers, one to be used fully on a marketing standpoint, the other thin one for functional purposes. In terms of code, the thin footer is derived from the normal one and can use the exact same code, just less.
 
 View the samples below:
 
