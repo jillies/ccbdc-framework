@@ -21,11 +21,26 @@ Colours and backgrounds are managed by using a .brand--name div that wraps aroun
 
 The sample of all headers below:
 
-[Full Navigation with an expand (Maxis)](navigation-full.php)
+[Navigation with an expand (Maxis)](navigation-full.php)
 
 [Navigation with dropdown (Maxis)](navigation-dropdown.php)
 
 [Navigation with an expand (Hotlink)](navigation-hotlink.php)
+
+###Footer
+
+There are two types of footers, one to be used fully on a marketing standpoint, the other thin one for functional purposes.
+
+View the samples below:
+
+[Normal footer (Maxis)](navigation-full.php)
+
+[Thin footer (Maxis)](navigation-dropdown.php)
+
+[Normal footer (Hotlink)](navigation-hotlink.php)
+
+[Thin footer (Hotlink)](navigation-thin-hotlink.php)
+
 
 Components
 ======
