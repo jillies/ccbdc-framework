@@ -1,3 +1,19 @@
+.content--container {
+	margin:0 10px;
+	@include box-sizing(border-box);
+	&.no-margin {
+		margin:0;
+	}
+
+	h1, h2, h3, h4, h5, h6, p {
+		margin-bottom:0.5em;
+		&.no--margin {
+			margin-bottom:0;
+		}
+
+	}
+}
+
 .content--container-defer {
 	@include respond(desktops) {
 		position:static;
@@ -5,3 +21,4 @@
 		clear:both;
 	}
 }
+

@@ -103,4 +103,6 @@
 
 	</div>
 
+	<div class="footer--svg"><?php include("svg.php") ; ?></div>
+
 </footer>

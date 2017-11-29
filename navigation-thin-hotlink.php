@@ -8,7 +8,9 @@ include("includes/head.php");
 <?php include("includes/search.php"); ?>
 
 <div class="content--container">
-	Content
+
+	<?php include("includes/components/grid.php"); ?>
+
 </div>
 <?php 
 $brand = "hotlink";

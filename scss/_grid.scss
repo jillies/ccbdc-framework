@@ -1,0 +1,70 @@
+.grid--container {
+	display:grid;
+	
+	&.column--halves {
+		&.retain--column {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		
+		@include respond(tablets) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&.column--onethirds {
+		&.retain--column {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		
+		@include respond(tablets) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	&.column--quarters {
+		&.retain--column {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		
+		@include respond(tablets) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&.column--thirds {
+		@include respond(tablets) {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+
+
+	&.column--fourths {
+		@include respond(tablets) {
+			grid-template-columns: 3fr 1fr;
+		}
+	}
+
+	&.with--gutter {
+		grid-column-gap: 20px;
+	}
+
+	&.sidebar--first {
+		.grid--column {
+			&:first-child {
+				order:1;
+			}
+		}
+	}
+
+	&.right--columnfirst {
+		.grid--column {
+			&:first-child {
+				order:1;
+				@include respond(tablets) {
+					order:0;
+				}
+			}
+		}
+	}
+
+}

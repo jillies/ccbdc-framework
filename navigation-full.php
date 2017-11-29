@@ -7,8 +7,10 @@ include("includes/head.php");
 <?php include("includes/navigation-full.php"); ?>
 <?php include("includes/search.php"); ?>
 
-<div class="content--container">
-	Content
+<div class="content--container no-margin">
+
+	<?php include("includes/components/grid.php"); ?>
+
 </div>
 <?php 
 
