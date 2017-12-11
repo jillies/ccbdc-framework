@@ -57,7 +57,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 </div>
 ```
 
-*Thirds (66.7% and 33.3%)**
+**Thirds (66.7% and 33.3%)**
 ```HTML
 <div class="grid--container column--thirds">
 	<div class="grid--column">
@@ -69,7 +69,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 </div>
 ```
 
-*Fourths (75% and 25%)**
+**Fourths (75% and 25%)**
 ```HTML
 <div class="grid--container column--fourths">
 	<div class="grid--column">
@@ -83,7 +83,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 
 Options are also available for grids:
 
-*Gutters (no gutters by default, .with--gutter class)**
+**Gutters (no gutters by default, .with--gutter class)**
 ```HTML
 <div class="grid--container with--gutter">
 	<div class="grid--column">
@@ -92,7 +92,7 @@ Options are also available for grids:
 </div>
 ```
 
-*Maintain grids in mobile (.retain--column class)**
+**Maintain grids in mobile (.retain--column class)**
 ```HTML
 <div class="grid--container column--halves retain--column">
 	<div class="grid--column">
@@ -116,7 +116,7 @@ Options are also available for grids:
 </div>
 ```
 
-*Right column appears first in mobile only (.right--columnfirst class)**
+**Right column appears first in mobile only (.right--columnfirst class)**
 ```HTML
 <div class="grid--container column--halves right--columnfirst">
 	<div class="grid--column">
