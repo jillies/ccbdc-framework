@@ -3,7 +3,7 @@ Grid
 
 Grids are used to lay out other components (one or many) within a set grid. Grids available are:
 
-**Size 1 of 1 (100% full grid)**
+* **Size 1 of 1 (100% full grid)**
 ```HTML
 <div class="grid--container">
 	<div class="grid--column">
