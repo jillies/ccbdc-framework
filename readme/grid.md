@@ -76,7 +76,10 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 </div>
 ```
 
-Options are also available for grids:
+###Grid options
+
+To use any of these options, just add onto the .grid--container class and it should work. Multiple class should also work if required.
+
 
 **Gutters (.with--gutter class)**
 
