@@ -3,7 +3,7 @@ Grid
 
 Grids are used to lay out other components (one or many) within a set grid. Grids available are:
 
-* **Size 1 of 1 (100% full grid)**
+* Size 1 of 1 (100% full grid)
 ```HTML
 <div class="grid--container">
 	<div class="grid--column">
@@ -11,8 +11,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 	</div>
 </div>
 ```
-
-**Size 1 of 2 (50% full grid)**
+* Size 1 of 2 (50% full grid)
 ```HTML
 <div class="grid--container column--halves">
 	<div class="grid--column">
@@ -23,8 +22,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 	</div>
 </div>
 ```
-
-**Size 1 of 3 (33.3% full grid)**
+* Size 1 of 3 (33.3% full grid)
 ```HTML
 <div class="grid--container column--onethirds">
 	<div class="grid--column">
@@ -38,8 +36,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 	</div>
 </div>
 ```
-
-**Size 1 of 4 (25% full grid)**
+* Size 1 of 4 (25% full grid)
 ```HTML
 <div class="grid--container column--quarters">
 	<div class="grid--column">
@@ -56,8 +53,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 	</div>
 </div>
 ```
-
-**Thirds (66.7% and 33.3%)**
+* Thirds (66.7% and 33.3%)
 ```HTML
 <div class="grid--container column--thirds">
 	<div class="grid--column">
@@ -68,8 +64,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 	</div>
 </div>
 ```
-
-**Fourths (75% and 25%)**
+* Fourths (75% and 25%)
 ```HTML
 <div class="grid--container column--fourths">
 	<div class="grid--column">
@@ -83,7 +78,8 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 
 Options are also available for grids:
 
-**Gutters (no gutters by default, .with--gutter class)**
+* Gutters (.with--gutter class)
+All grids have no gutters by default, however if gutters can be added with the .with--gutter class.
 ```HTML
 <div class="grid--container with--gutter">
 	<div class="grid--column">
@@ -92,7 +88,8 @@ Options are also available for grids:
 </div>
 ```
 
-**Maintain grids in mobile (.retain--column class)**
+* Maintain grids in mobile (.retain--column class)
+Columns will automatically turn into a single column in mobile, but by adding .retain--column, the size of each column will maintain in mobile widths.
 ```HTML
 <div class="grid--container column--halves retain--column">
 	<div class="grid--column">
@@ -104,7 +101,8 @@ Options are also available for grids:
 </div>
 ```
 
-**Sidebar column appears first (.sidebar--first class)**
+* Sidebar column appears first (.sidebar--first class)
+By default, all grids will have the content column first, then the sidebar, however if it needs to be reversed, just add the .sidebar--first class.
 ```HTML
 <div class="grid--container column--thirds sidebar--first">
 	<div class="grid--column">
@@ -116,7 +114,8 @@ Options are also available for grids:
 </div>
 ```
 
-**Right column appears first in mobile only (.right--columnfirst class)**
+* Right column appears first in mobile only (.right--columnfirst class)
+Although this will not be often, in the instance where the sidebar appears on the right in desktop but in mobile appears first as a full column, then use .right--columnfirst.
 ```HTML
 <div class="grid--container column--halves right--columnfirst">
 	<div class="grid--column">
