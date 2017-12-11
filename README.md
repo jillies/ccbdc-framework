@@ -48,4 +48,6 @@ Components
 ======
 [Badges](readme/badges.md)
 
+[Grid](readme/grid.md)
+
 [Preloaders](readme/preloader.md)
