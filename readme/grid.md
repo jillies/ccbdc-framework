@@ -76,7 +76,7 @@ Grids are used to lay out other components (one or many) within a set grid. Grid
 </div>
 ```
 
-###Grid options
+### Grid options
 
 To use any of these options, just add onto the .grid--container class and it should work. Multiple class should also work if required.
 
@@ -92,6 +92,7 @@ All grids have no gutters by default, however if gutters can be added with the .
 </div>
 ```
 
+
 **Maintain grids in mobile (.retain--column class)**
 
 Columns will automatically turn into a single column in mobile, but by adding .retain--column, the size of each column will maintain in mobile widths.
@@ -106,6 +107,7 @@ Columns will automatically turn into a single column in mobile, but by adding .r
 </div>
 ```
 
+
 **Sidebar column appears first (.sidebar--first class)**
 
 By default, all grids will have the content column first, then the sidebar, however if it needs to be reversed, just add the .sidebar--first class.
@@ -119,6 +121,7 @@ By default, all grids will have the content column first, then the sidebar, howe
 	</div>
 </div>
 ```
+
 
 **Right column appears first in mobile only (.right--columnfirst class)**
 
