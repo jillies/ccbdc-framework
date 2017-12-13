@@ -1,0 +1,49 @@
+.feedback--message {
+	margin-bottom:20px;
+	background:$wild-sand;
+	padding:15px;
+	@include border-radius(3px);
+	display:grid;
+	grid-template-columns: 30px auto;
+	&.with--close {
+		grid-template-columns: 30px auto 25px;
+	}
+	&.success {
+		background:$white-ice;
+	}
+	&.warning {
+		background:$egg-white;
+	}
+	&.information {
+		background:$humming-bird;
+	}
+	&.error {
+		background:$tuft-bush;
+	}
+	small {
+		width:100%;
+	}
+}
+	
+	.feedback--icon {
+		display:grid;
+		align-items:center;
+		i {
+			@include font-size(18px);
+		}
+	}
+
+	.feedback--close {
+		display:grid;
+		align-items:center;
+		text-align:right;
+		i {
+			@include font-size(16px);
+		}
+		a {
+			color:$dove-grey;
+			&:hover, &:focus {
+				color:$silver;
+			}
+		}
+	}

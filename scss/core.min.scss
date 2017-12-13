@@ -8,11 +8,12 @@
 @import "jqueryui";
 @import "base";
 
-@import "grid";
-@import "badge";
-@import "preloader";
-
 @import "header";
 @import "search";
 @import "content";
 @import "footer";
+
+@import "grid";
+@import "badge";
+@import "preloader";
+@import "feedback-messages";

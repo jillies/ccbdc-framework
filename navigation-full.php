@@ -10,6 +10,7 @@ include("includes/head.php");
 <div class="content--container no-margin">
 
 	<?php include("includes/components/grid.php"); ?>
+	<?php include("includes/components/feedback-message.php"); ?>
 
 </div>
 <?php 

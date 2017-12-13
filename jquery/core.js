@@ -2800,3 +2800,7 @@ $(".infinite-scroll-last a").click(function() {
 });
 
 
+$(".feedback--close a").click(function(){
+    $(this).parent().parent().hide("fast");
+});
+

@@ -10,8 +10,10 @@ include("includes/head.php");
 <div class="content--container">
 
 	<?php include("includes/components/grid.php"); ?>
+	<?php include("includes/components/feedback-message.php"); ?>
 
 </div>
+<?php include("includes/components/top-up.php"); ?>
 <?php 
 $brand = "hotlink";
 include("includes/footer-thin.php") ; ?>
