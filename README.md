@@ -51,3 +51,5 @@ Components
 [Grid](readme/grid.md)
 
 [Preloaders](readme/preloader.md)
+
+[Feedback Messages](readme/feedback-messages.md)
