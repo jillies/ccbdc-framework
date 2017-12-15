@@ -1,13 +1,11 @@
 Feedback Messages
 ======
 
-Feedback messages can be used independently into any container - all you'll need to do is to use a span to contain it and it will react as expected.
+Feedback messages can be used independently into any container - all you'll need to do is to use a div to contain it and it will react as expected.
 
 If you have a specific location to place it you will need to wrap it and manage it there instead of directly on the feedback messages.
 
-A feedback message contains an icon (from [Material Design](https://material.io/icons/)), a title, and text to describe the message. 
-
-There are 5 different types of messages, and a default if no type is specified. Use with a class to change the badge type and colours.
+There are 5 different types of messages, and a default if no type is specified. Use with a class below to change the colours:
 * default (no class required, used as a general feedback message)
 * information (a blue message used for general feedback message)
 * success (a green message used for success-related messages)
@@ -25,6 +23,8 @@ There are 5 different types of messages, and a default if no type is specified. 
 	</div>
 </div>
 ```
+
+Do bear in mind that the icon in the message is customizable only from [Material Design](https://material.io/icons/) icons, only for the default message. All other types of messages come with it's own icon by default. 
 
 Feedback messages can also be dismissable - to use this option, just add a .with--close class to .feedback--message, and a close button:
 ```HTML
