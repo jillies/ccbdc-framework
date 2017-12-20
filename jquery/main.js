@@ -133,3 +133,22 @@ $(".feedback--close a").click(function(){
     $(this).parent().parent().hide("fast");
 });
 
+$(".topup--button a").click(function(){
+    if ($( ".topup--container" ).hasClass( "topup--active" )) {
+        $(".topup--container").addClass("topup--delay");
+        setTimeout(function(){
+           $(".topup--container").removeClass("topup--active topup--delay");
+           $("head, body").removeClass("no-scroll");
+            $("header").removeClass("fixed-position-desktop");
+        }, 500);
+    } else {
+        $(".topup--container").addClass("topup--preload");
+        $("head, body").addClass("no-scroll");
+        $("header").addClass("fixed-position-desktop");
+        setTimeout(function(){
+            $(".topup--container").addClass("topup--active").removeClass("topup--preload");
+        }, 2000);
+    }
+});
+
+

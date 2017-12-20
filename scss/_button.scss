@@ -1,0 +1,7 @@
+.button--small, .button--regular, .button--large {
+	font-weight:600;
+	@include border-radius(5px);
+	color:$mine-shaft;
+	border:none;
+	@include transition(all, 0.2s ease-in-out);
+}

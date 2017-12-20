@@ -1,0 +1,109 @@
+.topup--container {
+	&.topup--active {
+		position:absolute;
+		top:0;
+		left:0;
+	}
+}
+
+.topup--button {
+	z-index:2;
+	position:fixed;
+	top:90%;
+	right:4%;
+	@include transition(all 1s ease);
+	@include transform-origin(center);
+	i {
+		top:12px;
+		left:12px;
+		position:absolute;
+		@include font-size(24px);
+		color:$white;
+	}
+	a {
+		position:relative;
+		@include border-radius(100%);
+		height:47px;
+		width:47px;
+		@include inline-block;
+		@include mdElevation(7);
+		@include transition(all 0.7s cubic-bezier(0.4, 0, 0.2, 1));
+		@include transform-origin(center);
+	}
+}
+	.topup--preload, .topup--active {
+		.topup--button {
+			top:1%;
+			right:2%;
+			transition-delay: 0.5s;
+			a {
+				background:none;
+				@include mdElevation(0);
+				transition-delay: 0.5s;
+			}
+			i {
+				@include transition(all 1s ease);
+				@include transform-origin(center);
+				@include transform(rotate(45deg) scale(1));
+			}
+		}
+	}
+
+.topup--background {
+	z-index:0;
+	position:fixed;
+	top:90%;
+	right:4%;
+	width:47px;
+	height:47px;
+	transform-origin: 50%;
+	@include border-radius(100%);
+	@include transition(all 1.5s cubic-bezier(0.4, 0, 0.2, 1));
+	background:$guardsman-red;
+}
+
+	.topup--preload, .topup--active {
+		.topup--background {
+			opacity:1;
+			@include transform(scale(70));
+			pointer-events:all;
+		}
+	}
+
+.topup--form {
+	z-index:1;
+	display:none;
+	opacity:0;
+	position:relative;
+	@include transition(all 0.5s ease);
+	margin:50px 20px 0;
+	h1,h2,h3,h4,h5,h6,p,label {
+		color:$white;		
+	}
+	form {
+		margin-top:20px;
+	}
+	.form--error {
+		color:$egg-white;
+		@include font-size(12px);
+	}
+}
+	.topup--preload {
+		.topup--form {
+			display:block;
+			opacity:0;
+		}
+	}
+
+	.topup--active {
+		.topup--form {
+			display:block;
+			opacity:1;		}
+	}
+
+	.topup--delay {
+		.topup--form {
+			opacity:0;
+			transition-delay:0;
+		}
+	}
