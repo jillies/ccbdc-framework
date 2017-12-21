@@ -1,11 +1,11 @@
 footer {
-	background:$mine-shaft;
+	background:$ebony;
 	color:$white;
 	padding:15px 15px 25px 10px;
 	a {
 		color:$white;
 		&:hover, &:focus {
-			color:$silver;
+			color:$coin;
 		}
 	}
 }
@@ -29,7 +29,7 @@ footer {
 }
 
 .footer--copyright {
-	color:$dusty-grey;
+	color:$smoke;
 	margin-bottom:10px;
 	@include respond(desktops) {
 		order:1;
@@ -47,7 +47,7 @@ footer {
 		display:inline;
 		padding-right:7px;
 		margin-right:5px;
-		border-right:1px solid $dusty-grey;
+		border-right:1px solid $smoke;
 		&:last-child {
 			border-right:none;
 		}
@@ -97,7 +97,7 @@ footer {
 .footer--links {
 	padding-top:5px;
 	margin-bottom:15px;
-	border-bottom:1px solid $dove-grey;
+	border-bottom:1px solid $fossil;
 	@include respond(tablets) {
 		display:grid;
 		grid-template-columns:repeat(2,1fr);
@@ -140,13 +140,13 @@ footer {
 		@include inline-block;
 		text-align:center;
 		svg {
-			fill:$mercury;
+			fill:$cloud;
 			@include inline-block;
   			vertical-align: middle;
 		}
 		&:hover, &:focus {
 			svg {
-				fill:$dove-grey;
+				fill:$fossil;
 			}
 		}
 	}
@@ -162,9 +162,9 @@ footer {
 
 	.footer--toll-free {
 		a {
-			color:$sushi;
+			color:$lime;
 			&:hover, &:focus {
-				color:$turbo;
+				color:$sunflower;
 			}
 		}
 	}
@@ -180,9 +180,9 @@ footer {
 
 	.footer--toll-free {
 		a {
-			color:$froly;
+			color:$coral;
 			&:hover, &:focus {
-				color:$selective-yellow;
+				color:$honey;
 			}
 		}
 	}

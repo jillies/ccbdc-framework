@@ -77,7 +77,7 @@ header {  }
 		width:100%;
 		vertical-align:top;
 		&:hover {
-			background:$mercury;
+			background:$cloud;
 		}
 	}
 
@@ -100,7 +100,7 @@ li.header--actions-user {
 li.header--actions-details {
 	padding-bottom:10px;
 	line-height:1em;
-	border-bottom:1px solid $mercury;
+	border-bottom:1px solid $cloud;
 	padding:0 20px 20px 20px;
 	@include inline-block;
 	a {
@@ -126,16 +126,16 @@ li a.header--actions-manage {
 	padding:10px;
 	@include border-radius(5px);
 	@include inline-block;
-	background:$dove-grey;
+	background:$fossil;
 	@include respond(desktops) {
 		@include border-radius(0);
-		color:$lochmara;
+		color:$pacific-blue;
 		display:inline;
 		background:none;
 		padding:0;
 	}
 	&:hover {
-		background:$emperor;
+		background:$slate;
 		@include respond(desktops) {
 			background:none;
 			text-decoration:underline;
@@ -144,7 +144,7 @@ li a.header--actions-manage {
 }
 
 .header--actions-line {
-	border-top:1px solid $mercury;
+	border-top:1px solid $cloud;
 }
 
 /* Bottom header */
@@ -234,11 +234,11 @@ li a.header--actions-manage {
 	a {
 		padding-right:5px;
 		i {
-			color:$dove-grey;
+			color:$fossil;
 		}
 		&:hover {
 			i {
-				color:$silver;
+				color:$coin;
 			}
 		}
 
@@ -265,7 +265,7 @@ li a.header--actions-manage {
 		max-width:320px;
 	}
  	a {
-		color:$emperor;
+		color:$slate;
 		&:hover, &:focus {
 			text-decoration:underline;
 		}
@@ -338,7 +338,7 @@ div.header--menu-extend {
 	}
 	small {
 		a {
-			color:$emperor;
+			color:$slate;
 			&:hover, &:focus {
 				background:none;
 				text-decoration:underline;
@@ -373,46 +373,46 @@ li.header--menu-dropdown {
 	}
 
 	.header--top {
-		border-bottom:1px solid $mercury;
+		border-bottom:1px solid $cloud;
 	}
 	.header--actions {
 		> ul > li {
 			> a, > i {
-				color:$dove-grey;
+				color:$fossil;
 			}
 			> a:hover {
-				color:$apple;
+				color:$greenlane;
 				i {
-					color:$apple;
+					color:$greenlane;
 				}
 			}
 		}
 	}
 	.header--menu-top {
-		border-bottom:1px solid $mercury;
+		border-bottom:1px solid $cloud;
 		a {
-			color:$apple;
+			color:$greenlane;
 			&:hover {
-				color:$dusty-grey;
+				color:$smoke;
 			}
 		}
 	}
 	.header--menu-fulldropdown, .header--menu-dropdown { 
 		a {
-			background:$apple;
+			background:$greenlane;
 			color:$white;
 			&:hover, &:focus {
-				background:$sushi;
+				background:$lime;
 				color:$white;
 			}
 		}
 		small {
 			a {
 				background:none;
-				color:$emperor;
+				color:$slate;
 				&:hover, &:focus {
 					background:none;
-					color:$apple;
+					color:$greenlane;
 				}
 			}
 		}
@@ -420,11 +420,11 @@ li.header--menu-dropdown {
 	.header--menu-fullextend {
 		h6 {
 			a {
-				color:$apple2;
+				color:$shamrock;
 			}
 		}
 		a:hover, a:focus {
-			color:$apple2;
+			color:$shamrock;
 		} 
 	}
 }
@@ -433,7 +433,7 @@ li.header--menu-dropdown {
 // Hotlink only
 .brand--hotlink {
 	.header--top, .menu--top {
-		background:$guardsman-red;
+		background:$crimson;
 	}
 	.header--actions {
 		> ul > li {
@@ -441,18 +441,18 @@ li.header--menu-dropdown {
 				color:$white;
 			}
 			> a:hover {
-				color:$mercury;
+				color:$cloud;
 				i {
-					color:$mercury;
+					color:$cloud;
 				}
 			}
 		}
 	}
 	.header--actions-topup {
 		a {
-			background:$maroon-a;
+			background:$garnet-a;
 			&:hover {
-				background:$tempress-a;
+				background:$mahogany-a;
 			}
 		}
 	}
@@ -462,24 +462,24 @@ li.header--menu-dropdown {
 		}
 	}
 	.header--bottom {
-		@include box-shadow($dove-grey-a 0 0 5px);
+		@include box-shadow($fossil-a 0 0 5px);
 	}
 
 	.header--menu-top {
-		background:$guardsman-red;
+		background:$crimson;
 		a {
 			color:$white;
 			&:hover {
-				color:$mercury;
+				color:$cloud;
 			}
 		}
 	}
 	.header--menu-fulldropdown, .header--menu-dropdown {
 		a {
-			background:$maroon;
+			background:$garnet;
 			border-color:$white;
 			&:hover, &:focus {
-				background:$tempress;
+				background:$mahogany;
 				color:$white;
 			}
 		}
@@ -491,7 +491,7 @@ li.header--menu-dropdown {
 			}
 			&:hover {
 				i {
-					color:$silver;
+					color:$coin;
 				}
 			}
 		}
@@ -499,11 +499,11 @@ li.header--menu-dropdown {
 	.header--menu-fullextend {
 		h6 {
 			a {
-				color:$mine-shaft;
+				color:$ebony;
 			}
 		}
 		a:hover, a:focus {
-			color:$guardsman-red;
+			color:$crimson;
 		} 
 	}
 

@@ -16,10 +16,10 @@
 	padding:20px 20px 0 20px;
 	text-align:right;
 	a {
-		color:$dove-grey;
+		color:$fossil;
 		@include font-size(12px);
 		&:hover, &:focus {
-			color:$silver;
+			color:$coin;
 		}
 	}
 }
@@ -42,7 +42,7 @@
 		position:absolute;
 		top:16px;
 		left:30px;
-		color:$silver;
+		color:$coin;
 		@include respond(max-grid-width) {
 			left:10px;
 		}
@@ -55,10 +55,10 @@
 .ui-menu {
 	margin-top:5px;
 	background:$white;
-	@include box-shadow($dove-grey-a 0 0 5px);
+	@include box-shadow($fossil-a 0 0 5px);
 	@include border-bottom-radius(5px);
 	@include font-size(14px);
-	color:$mine-shaft;
+	color:$ebony;
 	.ui-menu-item-wrapper {
 		padding:10px 10px 10px 25px;
 	}
@@ -67,11 +67,11 @@
 	}
 	.ui-state-active {
 		margin:0;
-		background:$mercury;
+		background:$cloud;
 	}
 	.ui-menu-divider {
 		padding:0;
-		border-bottom:1px solid $mercury;
+		border-bottom:1px solid $cloud;
 	}
 }
 
@@ -81,7 +81,7 @@
 	    white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		color:$dove-grey;
+		color:$fossil;
 		@include respond(iphone-plus) {
 			max-width:374px;
 		}
@@ -104,7 +104,7 @@
 	h6 {
 		font-weight:600;
 		padding-bottom:5px;
-		border-bottom:1px solid $mercury;
+		border-bottom:1px solid $cloud;
 		margin-top:40px;
 	}
 }
@@ -133,18 +133,18 @@
 		width:100%;
 		@include inline-block;
 		margin-bottom:5px;
-		color:$lochmara;
+		color:$pacific-blue;
 		word-wrap:break-word;
 	}
 	a {
-		color:$mine-shaft;
+		color:$ebony;
 		&:hover, &:focus {
-			color:$silver;
+			color:$coin;
 			img, span {
 				@include opacity(0.6);
 			}
 			small {
-				color:$mercury;
+				color:$cloud;
 			}
 		}
 	}
@@ -164,23 +164,23 @@
 		    padding: initial;
 		    max-width: none;
 		    padding:30px 10px;
-		    border-bottom:1px solid $mercury;
+		    border-bottom:1px solid $cloud;
 		    &:nth-child(odd) {
-		    	border-right:1px solid $mercury;
+		    	border-right:1px solid $cloud;
 		    }
 		    @include respond(tablets) {
-		    	border-right:1px solid $mercury;
+		    	border-right:1px solid $cloud;
 		    	&:nth-child(3n+3) {
 		    		border-right:none;
 		    	}
 		    }
 		    @include respond(desktops) {
-		    	border-right:1px solid $mercury;
+		    	border-right:1px solid $cloud;
 		    	&:nth-child(3n+3) {
-		    		border-right:1px solid $mercury;
+		    		border-right:1px solid $cloud;
 		    	}
 		    	&:nth-child(6n+6), &:first-child {
-		    		border-left:1px solid $mercury;
+		    		border-left:1px solid $cloud;
 		    	}
 		    }
 		}
@@ -188,7 +188,7 @@
 			text-align:center;
 		}
 		small {
-			color:$mine-shaft;
+			color:$ebony;
 		}
 	}
 }
@@ -204,7 +204,7 @@
 		text-align:center;
 	}
 	.infinite-scroll-last {
-		border-top:1px solid $mercury;
+		border-top:1px solid $cloud;
 		margin-top:30px;
 		padding:20px 0;
 	}

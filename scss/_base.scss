@@ -111,7 +111,7 @@ small {
 }
 
 .font--blue {
-  color:$lochmara;
+  color:$pacific-blue;
 }
 
 strong {
@@ -136,7 +136,7 @@ label {
   -webkit-appearance: none;
   padding:10px;
   margin:0.5em 0 0.25em;
-  border:1px solid $silver;
+  border:1px solid $coin;
   @include font-size(14px);
   @include border-radius(4px);
   @include transition(all, 0.2s ease-in-out);

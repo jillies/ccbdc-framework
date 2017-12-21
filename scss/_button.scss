@@ -1,7 +1,19 @@
 .button--small, .button--regular, .button--large {
 	font-weight:600;
 	@include border-radius(5px);
-	color:$mine-shaft;
+	color:$ebony;
 	border:none;
 	@include transition(all, 0.2s ease-in-out);
+	padding:12px 20px;
+	@include inline-block;
+	word-wrap: break-word;
 }
+
+.button--small {
+	@include font-size(12px);
+}
+
+.button--regular {
+	@include font-size(14px);
+}
+

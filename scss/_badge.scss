@@ -6,14 +6,14 @@
 	padding:2px 8px;
 	@include border-radius(3px);
 	color:$white;
-	background:$silver;
+	background:$coin;
 
 	&.information {
-		background:$lochmara;
+		background:$pacific-blue;
 	}
 
 	&.success {
-		background:$sushi;
+		background:$lime;
 	}
 
 	&.warning {
