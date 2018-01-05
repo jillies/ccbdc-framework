@@ -450,9 +450,9 @@ li.header--menu-dropdown {
 	}
 	.header--actions-topup {
 		a {
-			background:$garnet-a;
+			background:$garnet-a50;
 			&:hover {
-				background:$mahogany-a;
+				background:$mahogany-a50;
 			}
 		}
 	}
@@ -462,7 +462,7 @@ li.header--menu-dropdown {
 		}
 	}
 	.header--bottom {
-		@include box-shadow($fossil-a 0 0 5px);
+		@include box-shadow($fossil-a50 0 0 5px);
 	}
 
 	.header--menu-top {

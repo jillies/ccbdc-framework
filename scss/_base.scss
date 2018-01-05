@@ -132,6 +132,10 @@ label {
   width:100%;
 }
 
+input, button {
+  font-family: $body-font-family;
+}
+
 /*input {
   -webkit-appearance: none;
   padding:10px;

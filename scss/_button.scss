@@ -1,12 +1,81 @@
+/* For basic buttons, with sizes, outlines, disabled and maintaining button sizes in mobile */
 .button--small, .button--regular, .button--large {
 	font-weight:600;
 	@include border-radius(5px);
-	color:$ebony;
-	border:none;
 	@include transition(all, 0.2s ease-in-out);
 	padding:12px 20px;
+	white-space: normal;
+	width:100%;
+	text-align:center;
+	cursor:pointer;
 	@include inline-block;
-	word-wrap: break-word;
+	border:1px solid $cloud;
+	background:$cloud;
+	color:$fossil;
+	&:hover, &:focus {
+		border-color:$coin;
+		background:$coin;
+		color:$slate;
+	}
+	@include respond(tablets) {
+		width:auto;
+		display:inline;
+	}
+	&.outline {
+		background:none;
+		border-color:$fossil;
+		color:$fossil;
+		&:hover, &:focus {
+			border-color:$ebony;
+			color:$ebony;
+		}
+	}
+	&:disabled, &:disabled:hover, &:disabled:focus {
+		border-color:$cloud-a60;
+		background:$cloud-a60;
+		color:$fossil-a50;
+	}
+	&.outline:disabled, &.outline:disabled:hover, &.outline:disabled:focus {
+		background:none;
+		border-color:$cloud-a60;
+		color:$fossil-a50;
+	}
+	&.warning {
+		border-color:$honey;
+		background:$honey;
+		color:$white;
+		&:hover, &:focus {
+			border-color:$carrot;
+			background:$carrot;
+		}
+		&.outline {
+			background:none;
+			color:$honey;
+			&:hover, &:focus {
+				color:$carrot;
+			}
+		}
+	}
+	&.alert {
+		border-color:$red;
+		background:$red;
+		color:$white;
+		&:hover, &:focus {
+			border-color:$garnet;
+			background:$garnet;
+		}
+		&.outline {
+			background:none;
+			color:$red;
+			&:hover, &:focus {
+				color:$garnet;
+			}
+		}
+	}
+	&.inline-width {
+		display:inline;
+		width:auto;
+	}
 }
 
 .button--small {
@@ -17,3 +86,446 @@
 	@include font-size(14px);
 }
 
+.button--large {
+	@include font-size(20px);
+}
+
+.brand--maxis {
+	.button--small, .button--regular, .button--large {
+		&.primary {
+			border-color:$maxis-primary;
+			background:$maxis-primary;
+			color:$white;
+			&:hover, &:focus {
+				border-color:$maxis-primary-hover;
+				background:$maxis-primary-hover;
+			}
+			&.outline {
+				background:none;
+				border-color:$maxis-primary;
+				color:$maxis-primary;
+				&:hover, &:focus {
+					border-color:$maxis-primary-hover;
+					color:$maxis-primary-hover;
+				}
+			}
+		}
+		&.secondary {
+			border-color:$maxis-secondary;
+			background:$maxis-secondary;
+			color:$white;
+			&:hover, &:focus {
+				border-color:$maxis-secondary-hover;
+				background:$maxis-secondary-hover;
+			}
+			&.outline {
+				background:none;
+				border-color:$maxis-secondary;
+				color:$maxis-secondary;
+				&:hover, &:focus {
+					border-color:$maxis-secondary-hover;
+					color:$maxis-secondary-hover;
+				}
+			}
+		}
+	}
+}
+
+.brand--hotlink {
+	.button--small, .button--regular, .button--large {
+		&.primary {
+			border-color:$hotlink-primary;
+			background:$hotlink-primary;
+			color:$white;
+			&:hover, &:focus {
+				border-color:$hotlink-primary-hover;
+				background:$hotlink-primary-hover;
+			}
+			&.outline {
+				background:none;
+				border-color:$hotlink-primary;
+				color:$hotlink-primary;
+				&:hover, &:focus {
+					border-color:$hotlink-primary-hover;
+					color:$hotlink-primary-hover;
+				}
+			}
+		}
+		&.secondary {
+			border-color:$hotlink-secondary;
+			background:$hotlink-secondary;
+			color:$white;
+			&:hover, &:focus {
+				border-color:$hotlink-primary-hover;
+				background:$hotlink-primary-hover;
+			}
+			&.outline {
+				background:none;
+				border-color:$hotlink-secondary;
+				color:$hotlink-secondary;
+				&:hover, &:focus {
+					border-color:$hotlink-primary-hover;
+					color:$hotlink-primary-hover;
+				}
+			}
+		}
+		&.alert {
+			border-color:$red-orange;
+			background:$red-orange;
+			&:hover, &:focus {
+				border-color:$crimson;
+				background:$crimson;
+			}
+			&.outline {
+				background:none;
+				border-color:$red-orange;
+				color:$red-orange;
+				&:hover, &:focus {
+					border-color:$crimson;
+					color:$crimson;
+				}
+			}
+		}
+	}
+}
+
+/*  For button with description */
+.button--description {
+	font-weight:600;
+	@include border-radius(5px);
+	@include transition(all, 0.2s ease-in-out);
+	padding:12px 20px;
+	white-space: normal;
+	width:100%;
+	text-align:center;
+	cursor:pointer;
+	@include inline-block;
+	border:1px solid $cloud;
+	background:$cloud;
+	color:$slate;
+	@include font-size(16px);
+	text-transform:uppercase;
+	@include respond(tablets) {
+		width:auto;
+		@include inline-block;
+	}
+	span {
+		@include font-size(12px);
+		color:$fossil;
+		text-transform:none;
+		font-weight:600;
+	}
+	&:hover, &:focus {
+		border-color:$coin;
+		background:$coin;
+		color:$ebony;
+		span {
+			color:$slate;
+		}
+	}
+	&.outline {
+		background:none;
+		border-color:$cloud;
+		&:hover, &focus {
+			border-color:$coin;
+		}
+	}
+	&.disabled, &.disabled:hover, &.disabled:focus {
+		border-color:$cloud-a60;
+		background:$cloud-a60;
+		color:$slate-a60;
+		span {
+			color:$fossil-a50;	
+		}
+	}
+	&.outline {
+		&.disabled {
+			background:none;
+		}
+	}
+}
+
+.brand--maxis {
+	.button--description {
+		&.primary {
+			border-color:$maxis-primary;
+			background:$maxis-primary;
+			color:$white;
+			span {
+				color:$chartreuse;
+			}
+			&:hover, &:focus {
+				border-color:$maxis-primary-hover;
+				background:$maxis-primary-hover;
+			}
+			&.outline {
+				background:none;
+				color:$maxis-primary;
+				span {
+					color:$smoke;
+				}
+				&:hover, &:focus {
+					color:$maxis-primary-hover;
+				}
+			}
+		}
+		&.secondary {
+			border-color:$maxis-secondary;
+			background:$maxis-secondary;
+			color:$white;
+			span {
+				color:$alabaster;
+			}
+			&:hover, &:focus {
+				border-color:$maxis-secondary-hover;
+				background:$maxis-secondary-hover;
+			}
+			&.outline {
+				background:none;
+				color:$maxis-secondary;
+				span {
+					color:$smoke;
+				}
+				&:hover, &:focus {
+					color:$maxis-secondary-hover;
+				}
+			}
+		}
+	}
+}
+
+.brand--hotlink {
+	.button--description {
+		&.primary {
+			border-color:$hotlink-primary;
+			background:$hotlink-primary;
+			color:$white;
+			span {
+				color:$coral;
+			}
+			&:hover, &:focus {
+				border-color:$hotlink-primary-hover;
+				background:$hotlink-primary-hover;
+			}
+			&.outline {
+				background:none;
+				color:$hotlink-primary;
+				span {
+					color:$smoke;
+				}
+				&:hover, &:focus {
+					color:$hotlink-primary-hover;
+				}
+			}
+		}
+		&.secondary {
+			border-color:$hotlink-secondary;
+			background:$hotlink-secondary;
+			color:$white;
+			span {
+				color:$alabaster;
+			}
+			&:hover, &:focus {
+				border-color:$hotlink-secondary-hover;
+				background:$hotlink-secondary-hover;
+			}
+			&.outline {
+				background:none;
+				color:$hotlink-secondary;
+				span {
+					color:$smoke;
+				}
+				&:hover, &:focus {
+					color:$hotlink-secondary-hover;
+				}
+			}
+		}
+	}
+}
+
+/* Button with icon and text */
+.button--icontext {
+	font-weight:600;
+	@include border-radius(5px);
+	@include transition(all, 0.2s ease-in-out);
+	padding:12px 20px;
+	white-space: normal;
+	width:100%;
+	text-align:center;
+	cursor:pointer;
+	border:1px solid $cloud;
+	background:$cloud;
+	color:$fossil;
+	@include inline-block;
+	justify-content:stretch;
+	@include respond(tablets) {
+		width:auto;
+	}
+	&:hover, &:focus {
+		border-color:$coin;
+		background:$coin;
+		color:$slate;
+	}
+	&.outline {
+		background:none;
+	}
+}
+	.button--icontext-wrap {
+		width:100%;
+		display:grid;
+		grid-template-columns:45px auto 30px;
+	}
+	.button--icontext-icon {
+		text-align:left;
+		align-self:center;
+		i {
+			@include font-size(28px);
+			float:left;
+		}
+	}
+
+	.button--icontext-text {
+		text-align:left;
+		h6 {
+			margin-bottom:0;
+			color:$slate;
+			@include font-size(18px);
+		}
+	}
+
+	.button--icontext-arrow {
+		align-self:center;
+		text-align:right;
+	}
+
+.button--icontext {
+	&.left {
+		padding:12px 20px 12px 10px;
+		.button--icontext-wrap {
+			grid-template-columns:30px auto 45px;
+		}
+		.button--icontext-icon {
+			order:3;
+			text-align:right;
+			i {
+				float:right;
+			}
+		}
+		.button--icontext-text {
+			order:2;
+		}
+		.button--icontext-arrow {
+			order:1;
+			text-align:left;
+		}
+	}	
+}
+
+.brand--maxis {
+	.button--icontext {
+		&.primary {
+			color:$white;
+			border-color:$maxis-primary;
+			background:$maxis-primary;
+			&:hover, &focus {
+				border-color:$maxis-primary-hover;
+				background:$maxis-primary-hover;
+			}
+			h6 {
+				color:$white;
+			}
+			small {
+				color:$chartreuse;
+			}
+			&.outline {
+				background:none;
+				color:$maxis-primary;
+				h6 {
+					color:$maxis-primary;
+				}
+				small {
+					color:$smoke;
+				}
+			}
+		}
+		&.secondary {
+			color:$white;
+			border-color:$maxis-secondary;
+			background:$maxis-secondary;
+			&:hover, &focus {
+				border-color:$maxis-secondary-hover;
+				background:$maxis-secondary-hover;
+			}
+			h6 {
+				color:$white;
+			}
+			small {
+				color:$alabaster;
+			}
+			&.outline {
+				background:none;
+				color:$maxis-secondary;
+				h6 {
+					color:$maxis-secondary;
+				}
+				small {
+					color:$smoke;
+				}
+			}
+		}
+	}
+}
+
+.brand--hotlink {
+	.button--icontext {
+		&.primary {
+			color:$white;
+			border-color:$hotlink-primary;
+			background:$hotlink-primary;
+			&:hover, &focus {
+				border-color:$hotlink-secondary-hover;
+				background:$hotlink-primary-hover;
+			}
+			h6 {
+				color:$white;
+			}
+			small {
+				color:$coral;
+			}
+			&.outline {
+				background:none;
+				color:$hotlink-primary;
+				h6 {
+					color:$hotlink-primary;
+				}
+				small {
+					color:$smoke;
+				}
+			}
+		}
+		&.secondary {
+			color:$white;
+			border-color:$hotlink-secondary;
+			background:$hotlink-secondary;
+			&:hover, &focus {
+				background:$hotlink-secondary-hover;
+			}
+			h6 {
+				color:$white;
+			}
+			small {
+				color:$alabaster;
+			}
+			&.outline {
+				background:none;
+				color:$hotlink-secondary;
+				h6 {
+					color:$hotlink-secondary;
+				}
+				small {
+					color:$smoke;
+				}
+			}
+		}
+	}
+}

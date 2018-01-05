@@ -5,7 +5,7 @@
 	left:0;
 	width:100vw;
 	height:100vh;
-	background:$white-a;
+	background:$white-a90;
 	overflow:auto;
 }
 
@@ -55,7 +55,7 @@
 .ui-menu {
 	margin-top:5px;
 	background:$white;
-	@include box-shadow($fossil-a 0 0 5px);
+	@include box-shadow($fossil-a50 0 0 5px);
 	@include border-bottom-radius(5px);
 	@include font-size(14px);
 	color:$ebony;

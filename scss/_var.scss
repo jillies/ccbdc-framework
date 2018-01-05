@@ -39,7 +39,7 @@ $coin: rgb(191,191,191);
 $cloud: rgb(229,229,229);
 $alabaster: rgb(250,250,250);
 $white: rgb(255,255,255);
-$red: rgb(225,27,52);
+$red: rgb(225,26,54);
 
 // Maxis Colours
 $shock-green: rgb(140,230,0);
@@ -73,6 +73,7 @@ $parakeet: rgb(0,178,51);
 $pine: rgb(0,129,72);
 $magenta: rgb(180,0,102);
 $honey: rgb(255,186,8);
+$carrot: rgb(255,145,41);
 
 // Additional Colours (only for framework purposes)
 $lightning-yellow: rgb(246,190,28);
@@ -86,7 +87,22 @@ $tuft-bush: rgb(255, 210, 202);
 
 // Alpha colours
 $black-a25: rgba(0,0,0,0.25);
-$fossil-a: rgba(115,115,115,0.5);
-$mahogany-a: rgba(64,0,0,0.5);
-$garnet-a: rgba(127,0,0,0.5);
-$white-a: rgba(255,255,255,0.9);
+$black-a10: rgba(0,0,0,0.10);
+$cloud-a60: rgba(229,229,229,0.6);
+$slate-a60: rgba(80,80,80,0.6);
+$fossil-a50: rgba(115,115,115,0.5);
+$mahogany-a50: rgba(64,0,0,0.5);
+$garnet-a50: rgba(127,0,0,0.5);
+$white-a90: rgba(255,255,255,0.9);
+$white-a20: rgba(255,255,255,0.2);
+
+
+// Button colours
+$maxis-primary: $greenlane;
+$maxis-primary-hover: $forest;
+$maxis-secondary: $lime;
+$maxis-secondary-hover: $shamrock;
+$hotlink-primary: $crimson;
+$hotlink-primary-hover: $garnet;
+$hotlink-secondary: $hotlink-red;
+$hotlink-secondary-hover: $garnet;

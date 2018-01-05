@@ -14,8 +14,8 @@
 	@include transition(all 1s ease);
 	@include transform-origin(center);
 	i {
-		top:12px;
-		left:12px;
+		top:10px;
+		left:10px;
 		position:absolute;
 		@include font-size(24px);
 		color:$white;
@@ -23,6 +23,7 @@
 	a {
 		position:relative;
 		@include border-radius(100%);
+		border:1px solid $black-a10;
 		height:47px;
 		width:47px;
 		@include inline-block;
