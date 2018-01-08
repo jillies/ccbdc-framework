@@ -53,3 +53,5 @@ Components
 [Preloaders](readme/preloader.md)
 
 [Feedback Messages](readme/feedback-messages.md)
+
+[Buttons](readme/button.md)
