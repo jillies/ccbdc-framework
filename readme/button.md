@@ -9,9 +9,10 @@ The classes introduced for buttons can all be mixed and matched so feel free to 
 
 Buttons can only be used with ```<input>```, ```<a>``` or ```<button>```.
 
-### Normal Button
+## Normal Button
+======
 
-**Button sizes**
+### Button sizes
 
 
 3 different button sizes - small (.button--small), regular (.button--regular) and large (.button--large). Manage it with different classes to tweak the sizes of the font.
