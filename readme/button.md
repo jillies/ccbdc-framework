@@ -35,17 +35,18 @@ Outline (.outline) with a border instead of a background.
 <a href="#" class="button--regular outline">Outline</a>
 ```
 
-Disabled buttons, only for <input> and <button>
+Disabled buttons, only for ```<input>``` and ```<button>```
 ```HTML
 <input type="submit" class="button--regular" value="Disabled" disabled /> 
 ```
 
-Disabled outlined buttons, only for <input> and <button>
+Disabled outlined buttons, only for ```<input>``` and ```<button>```
 ```HTML
 <button type="submit" class="button--regular outline"  disabled>Disabled Outline</button>
 ```
 
-**Button colours**
+
+### Button colours
 
 Default button colours will be grey, but adding a class will change the colour based on the brand.
 
@@ -89,13 +90,13 @@ Alert outline color (.alert, .outline)
 <input type="submit" class="button--regular alert outline" value="Alert" /> 
 ```
 
-**Maintain the size of button in mobile instead of 100% (.inline-width)**
+### Maintain the size of button in mobile instead of 100% (.inline-width) 
 ```HTML
 <a href="#" class="button--regular inline-width">Regular</a> 
 ```
 
 
-### Button with description
+## Button with description
 
 This button is in capital and has small subtext underneath. Using all previous classes is possible - outline (.outline), disabled (.disabled), primary (.primary) and secondary (.secondary).
 ```HTML
@@ -103,11 +104,11 @@ This button is in capital and has small subtext underneath. Using all previous c
 	<span>Subtext here</span></a> 
 ```
 
-### Button with icon and text
+## Button with icon and text
 
 This button has an icon, title, subtitle and an arrow. It can be aligned left (.left) or right and using all previous classes is possible - outline (.outline), primary (.primary) and secondary (.secondary).
 
-Button arrow pointing to the right
+### Button arrow pointing to the right
 ```HTML
 <a href="#" class="button--icontext primary">
 	<div class="button--icontext-wrap">
@@ -125,7 +126,7 @@ Button arrow pointing to the right
 </a>
 ```
 
-Button arrow pointing to the left
+### Button arrow pointing to the left
 ```HTML
 <a href="#" class="button--icontext secondary left">
 	<div class="button--icontext-wrap">
