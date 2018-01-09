@@ -10,7 +10,7 @@ The classes introduced for buttons can all be mixed and matched so feel free to 
 Buttons can only be used with ```<input>```, ```<a>``` or ```<button>```.
 
 ## Normal Button
-======
+
 
 ### Button sizes
 
@@ -28,7 +28,7 @@ These classes are the base for all buttons, so pick a size and one of these clas
 ```
 
 
-**Types of buttons**
+### Types of buttons
 
 Outline (.outline) with a border instead of a background.
 ```HTML
