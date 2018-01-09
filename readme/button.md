@@ -7,11 +7,13 @@ All buttons are full width in mobile, but will resize to the length of the text 
 
 The classes introduced for buttons can all be mixed and matched so feel free to combine them to make a button that you will need.
 
-Buttons can only be used with ```HTML <input>```, <a> or <button>.
+Buttons can only be used with ```<input>```, ```<a>``` or ```<button>```.
 
 ### Normal Button
 
 **Button sizes**
+
+
 3 different button sizes - small (.button--small), regular (.button--regular) and large (.button--large). Manage it with different classes to tweak the sizes of the font.
 
 These classes are the base for all buttons, so pick a size and one of these classes must be used.
@@ -24,7 +26,9 @@ These classes are the base for all buttons, so pick a size and one of these clas
 <button type="submit" class="button--large">Large</button>
 ```
 
+
 **Types of buttons**
+
 Outline (.outline) with a border instead of a background.
 ```HTML
 <a href="#" class="button--regular outline">Outline</a>
