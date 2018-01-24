@@ -94,6 +94,7 @@ $fossil-a50: rgba(115,115,115,0.5);
 $mahogany-a50: rgba(64,0,0,0.5);
 $garnet-a50: rgba(127,0,0,0.5);
 $white-a90: rgba(255,255,255,0.9);
+$white-a50: rgba(255,255,255,0.5);
 $white-a20: rgba(255,255,255,0.2);
 
 
@@ -104,5 +105,5 @@ $maxis-secondary: $lime;
 $maxis-secondary-hover: $shamrock;
 $hotlink-primary: $crimson;
 $hotlink-primary-hover: $garnet;
-$hotlink-secondary: $hotlink-red;
-$hotlink-secondary-hover: $garnet;
+$hotlink-secondary: $white;
+$hotlink-secondary-hover: $cloud;

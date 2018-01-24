@@ -48,7 +48,7 @@
 			 		<span class="form--error">Please fill in a mobile number to top up.</span>
 			 	</p>
 
-			 	<p><input type="submit" class="button--regular" value="Top up" /></p>
+			 	<p><input type="submit" class="button--regular secondary outline" value="Top up" /></p>
 
 			</form>
 		</div>

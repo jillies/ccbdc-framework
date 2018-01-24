@@ -1,0 +1,18 @@
+input, button {
+  font-family: $body-font-family;
+}
+
+input {
+  -webkit-appearance: none;
+  padding:10px;
+  color:$slate;
+  border:1px solid $coin;
+  @include font-size(14px);
+  @include border-radius(4px);
+  @include transition(all, 0.2s ease-in-out);
+  outline: none;
+  width:100%;
+  &:invalid {
+    box-shadow:none;
+  }
+}

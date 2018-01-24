@@ -154,18 +154,20 @@
 		&.secondary {
 			border-color:$hotlink-secondary;
 			background:$hotlink-secondary;
-			color:$white;
+			color:$crimson;
 			&:hover, &:focus {
-				border-color:$hotlink-primary-hover;
-				background:$hotlink-primary-hover;
+				color:$crimson;
+				border-color:$hotlink-secondary-hover;
+				background:$hotlink-secondary-hover;
 			}
 			&.outline {
 				background:none;
 				border-color:$hotlink-secondary;
 				color:$hotlink-secondary;
 				&:hover, &:focus {
-					border-color:$hotlink-primary-hover;
-					color:$hotlink-primary-hover;
+					background:none;
+					border-color:$hotlink-secondary-hover;
+					color:$hotlink-secondary-hover;
 				}
 			}
 		}
@@ -321,9 +323,9 @@
 		&.secondary {
 			border-color:$hotlink-secondary;
 			background:$hotlink-secondary;
-			color:$white;
+			color:$crimson;
 			span {
-				color:$alabaster;
+				color:$coral;
 			}
 			&:hover, &:focus {
 				border-color:$hotlink-secondary-hover;
@@ -333,7 +335,7 @@
 				background:none;
 				color:$hotlink-secondary;
 				span {
-					color:$smoke;
+					color:$coin;
 				}
 				&:hover, &:focus {
 					color:$hotlink-secondary-hover;
@@ -384,7 +386,7 @@
 		}
 	}
 
-	.button--icontext-text {
+	.button--icontext .button--icontext-text {
 		text-align:left;
 		h6 {
 			margin-bottom:0;
@@ -504,17 +506,17 @@
 			}
 		}
 		&.secondary {
-			color:$white;
+			color:$crimson;
 			border-color:$hotlink-secondary;
 			background:$hotlink-secondary;
 			&:hover, &focus {
 				background:$hotlink-secondary-hover;
 			}
 			h6 {
-				color:$white;
+				color:$crimson;
 			}
 			small {
-				color:$alabaster;
+				color:$coral;
 			}
 			&.outline {
 				background:none;
@@ -524,6 +526,15 @@
 				}
 				small {
 					color:$smoke;
+				}
+				&:hover, &:focus {
+					color:$coin;
+					h6 {
+						color:$coin;
+					}
+					small {
+						color:$fossil;
+					}
 				}
 			}
 		}

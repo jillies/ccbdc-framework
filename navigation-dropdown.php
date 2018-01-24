@@ -12,6 +12,8 @@ include("includes/head.php");
 	<?php include("includes/components/grid.php"); ?>
 	<?php include("includes/components/feedback-message.php"); ?>
 	<?php include("includes/components/button.php"); ?>
+	<?php include("includes/components/input.php"); ?>
+
 
 </div>
 

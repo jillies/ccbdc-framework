@@ -41,6 +41,7 @@
 				background:none;
 				@include mdElevation(0);
 				transition-delay: 0.5s;
+				border:none;
 			}
 			i {
 				@include transition(all 1s ease);
@@ -88,6 +89,48 @@
 		color:$egg-white;
 		@include font-size(12px);
 	}
+	ul {
+		display:grid;
+		grid-template-columns:repeat(4,1fr);
+		grid-column-gap: 10px;
+		height:45px;
+		margin:5px 0 15px;
+	}
+	li {
+		position:relative;
+		label, input {
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+		}
+		label {
+			border:1px solid $white-a50;
+			color:$white-a50;
+			@include inline-block;
+			height:45px;
+			@include border-radius(3px);
+			line-height:45px;
+			text-align:center;
+			cursor:pointer;
+			@include transition(all, 0.2s ease-in-out);
+			&:hover, &:focus {
+				border-color:$white;
+				color:$white;
+			}
+		}
+	}
+	input[type="radio"] {
+		opacity:0.011;
+		z-index:100;
+		&:checked + label {
+			border-color:$white;
+			color:$white;
+		}
+	}
+
 }
 	.topup--preload {
 		.topup--form {
